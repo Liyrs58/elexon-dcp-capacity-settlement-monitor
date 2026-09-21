@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-01-14T23:00",
+  "received": 13,
+  "processed": 20,
+  "backlog": 602,
+  "latency": 52.5,
+  "failures": 0,
+  "retries": 1,
+  "forecast": 8,
+  "capacity": 20,
+  "state": "At risk",
+  "backlog_change_24h": 158,
+  "forecast_variance_24h": 0.6571428571428571,
+  "arrivals_per_hour_24h": 26.58,
+  "processed_per_hour_24h": 20.0,
+  "failure_rate_24h": 0.0219,
+  "retry_rate_24h": 0.0376,
+  "delayed_runs_24h": 1,
+  "total_runs_24h": 2,
+  "average_run_delay_24h": 63.5,
+  "hours_to_critical_backlog": 45.3,
+  "demo_thresholds": {
+    "elevated_backlog": 180,
+    "at_risk_backlog": 550,
+    "critical_backlog": 900,
+    "elevated_latency_minutes": 35,
+    "at_risk_latency_minutes": 75,
+    "critical_latency_minutes": 120,
+    "elevated_forecast_variance": 0.2
+  }
+}

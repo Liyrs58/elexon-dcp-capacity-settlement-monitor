@@ -1,0 +1,86 @@
+[
+  {
+    "code": "H1",
+    "question": "Is demand arriving faster than the service can process it?",
+    "why_it_matters": "It helps distinguish an early service signal from a later symptom.",
+    "data_needed": "Synthetic interval, workload, forecast and scheduled run records.",
+    "method": "Transparent comparison of rates, totals and shares.",
+    "result": "Late sample net queue growth is 0.20 records per row.",
+    "conclusion": "Supported in this synthetic sample.",
+    "confidence": "Medium",
+    "limitation": "The sample has no private service telemetry.",
+    "next_check": "Compare arrival and completion definitions with the service owner."
+  },
+  {
+    "code": "H2",
+    "question": "Is forecast error an early signal of service pressure?",
+    "why_it_matters": "It helps distinguish an early service signal from a later symptom.",
+    "data_needed": "Synthetic interval, workload, forecast and scheduled run records.",
+    "method": "Transparent comparison of rates, totals and shares.",
+    "result": "Actual demand is +22.3% against the generated forecast.",
+    "conclusion": "Supported as a leading signal in this demonstration.",
+    "confidence": "Low to medium",
+    "limitation": "The generator makes the forecast and demand relationship illustrative.",
+    "next_check": "Test lead times and false alerts on real historical windows."
+  },
+  {
+    "code": "H3",
+    "question": "Does one workload contribute disproportionately to excess demand?",
+    "why_it_matters": "It helps distinguish an early service signal from a later symptom.",
+    "data_needed": "Synthetic interval, workload, forecast and scheduled run records.",
+    "method": "Transparent comparison of rates, totals and shares.",
+    "result": "new MSID Pair contributes 40.1% of positive excess demand.",
+    "conclusion": "Supported for new MSID Pair.",
+    "confidence": "Medium",
+    "limitation": "Workload categories are synthetic and do not identify an Elexon cause.",
+    "next_check": "Compare workload definitions and processing effort using internal telemetry."
+  },
+  {
+    "code": "H4",
+    "question": "Could historic resubmissions create avoidable pressure?",
+    "why_it_matters": "It helps distinguish an early service signal from a later symptom.",
+    "data_needed": "Synthetic interval, workload, forecast and scheduled run records.",
+    "method": "Transparent comparison of rates, totals and shares.",
+    "result": "Historic resubmissions total 1,295 records in the sample.",
+    "conclusion": "Worth testing as a control option, not proven as a cause.",
+    "confidence": "Low",
+    "limitation": "Volume alone does not measure processing cost or priority.",
+    "next_check": "Measure reprocessing effort and customer obligations before throttling."
+  },
+  {
+    "code": "H5",
+    "question": "Can temporary demand controls improve recovery?",
+    "why_it_matters": "It helps distinguish an early service signal from a later symptom.",
+    "data_needed": "Synthetic interval, workload, forecast and scheduled run records.",
+    "method": "Transparent comparison of rates, totals and shares.",
+    "result": "The sample contains 2 delayed scheduled run records.",
+    "conclusion": "Scenario testing is needed; the generated history cannot prove an intervention effect.",
+    "confidence": "Low",
+    "limitation": "There is no observed before and after intervention in the source data.",
+    "next_check": "Run a controlled simulation with agreed service constraints."
+  },
+  {
+    "code": "H6",
+    "question": "Would capacity expansion alone solve the issue?",
+    "why_it_matters": "It helps distinguish an early service signal from a later symptom.",
+    "data_needed": "Synthetic interval, workload, forecast and scheduled run records.",
+    "method": "Transparent comparison of rates, totals and shares.",
+    "result": "A demand rise can still exceed any fixed capacity under the scenario model.",
+    "conclusion": "Rejected as a universal answer under sustained growth.",
+    "confidence": "Medium",
+    "limitation": "This is a queue sensitivity result, not an architecture assessment.",
+    "next_check": "Stress test multiple demand and capacity cases with service owners."
+  },
+  {
+    "code": "H7",
+    "question": "Does prioritising critical work reduce downstream risk?",
+    "why_it_matters": "It helps distinguish an early service signal from a later symptom.",
+    "data_needed": "Synthetic interval, workload, forecast and scheduled run records.",
+    "method": "Transparent comparison of rates, totals and shares.",
+    "result": "26 of 28 critical sample runs are on time.",
+    "conclusion": "Use prioritisation as a scenario to assess.",
+    "confidence": "Low to medium",
+    "limitation": "Run status is generated from a simple queue rule.",
+    "next_check": "Define priority classes and completion measures with Settlement owners."
+  }
+]

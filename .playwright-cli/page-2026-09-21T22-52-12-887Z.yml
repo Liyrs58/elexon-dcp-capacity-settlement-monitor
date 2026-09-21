@@ -1,0 +1,72 @@
+- generic [ref=f1e2]:
+  - complementary [ref=f1e3]:
+    - generic [ref=f1e4]: SI
+    - generic [ref=f1e5]:
+      - generic [ref=f1e6]: Service monitor
+      - generic [ref=f1e7]: SYNTHETIC CASE
+    - navigation "Dashboard sections" [ref=f1e9]:
+      - button "Overview" [ref=f1e10] [cursor=pointer]
+      - button "Drivers & forecast" [ref=f1e11] [cursor=pointer]
+      - button "Scenario lab" [ref=f1e12] [cursor=pointer]
+      - button "Hypothesis tests" [ref=f1e13] [cursor=pointer]
+      - button "Customer impact" [ref=f1e14] [cursor=pointer]
+      - button "Improvement register" [ref=f1e15] [cursor=pointer]
+      - button "Analyst approach" [active] [ref=f1e16] [cursor=pointer]
+      - button "Service note" [ref=f1e17] [cursor=pointer]
+      - button "Evidence & limits" [ref=f1e18] [cursor=pointer]
+    - generic [ref=f1e22]:
+      - strong [ref=f1e23]: Public case
+      - generic [ref=f1e24]: 14 Sep 2026 circular
+    - generic [ref=f1e25]: LOCAL DEMONO LIVE SYSTEM CONNECTION
+  - main [ref=f1e26]:
+    - generic [ref=f1e27]:
+      - generic [ref=f1e28]: SERVICE MONITOR / SETTLEMENT & INSIGHT
+      - generic [ref=f1e29]:
+        - generic [ref=f1e30]: SYNTHETIC DATA
+        - generic [ref=f1e32]: RS
+    - generic [ref=f1e33]:
+      - strong [ref=f1e34]: DEMONSTRATION ONLY
+      - generic [ref=f1e35]: Every participant, metric, threshold and service run shown here is generated. No Elexon operational data is used.
+    - generic [ref=f1e810]:
+      - generic [ref=f1e812]:
+        - generic [ref=f1e813]: ROLE ALIGNMENT
+        - heading "How I would investigate as a Service Analyst" [level=1] [ref=f1e814]
+        - paragraph [ref=f1e815]: A practical sequence for an Elexon service question.
+      - article [ref=f1e816]:
+        - list [ref=f1e817]:
+          - listitem [ref=f1e818]:
+            - strong [ref=f1e819]: Understand the service and customer question.
+            - generic [ref=f1e820]: Clarify the process, deadline and decision that matter.
+          - listitem [ref=f1e821]:
+            - strong [ref=f1e822]: Confirm the BSC and process context.
+            - generic [ref=f1e823]: Identify the relevant service, obligation, owner and escalation route.
+          - listitem [ref=f1e824]:
+            - strong [ref=f1e825]: Validate the evidence.
+            - generic [ref=f1e826]: Check completeness, types, timing, duplicates and reconciliation before analysis.
+          - listitem [ref=f1e827]:
+            - strong [ref=f1e828]: Quantify the impact.
+            - generic [ref=f1e829]: Measure arrivals, completions, backlog, latency, quality and affected runs.
+          - listitem [ref=f1e830]:
+            - strong [ref=f1e831]: Segment and investigate.
+            - generic [ref=f1e832]: Compare participants, workloads and time windows without assigning blame.
+          - listitem [ref=f1e833]:
+            - strong [ref=f1e834]: Test hypotheses.
+            - generic [ref=f1e835]: Use transparent SQL and Python calculations with stated limits.
+          - listitem [ref=f1e836]:
+            - strong [ref=f1e837]: Coordinate and communicate.
+            - generic [ref=f1e838]: Share confirmed facts, uncertainty, next actions and the next update time.
+          - listitem [ref=f1e839]:
+            - strong [ref=f1e840]: Monitor recovery and capture learning.
+            - generic [ref=f1e841]: Measure whether the chosen action worked and update the runbook.
+      - generic [ref=f1e842]:
+        - article [ref=f1e843]:
+          - generic [ref=f1e844]: ELEXON CONTEXT
+          - heading "Who does what" [level=3] [ref=f1e845]
+          - paragraph [ref=f1e846]: Elexon administers the BSC and Settlement arrangements. NESO balances the physical system. BSC Agents provide defined services under managed requirements. The analyst prepares evidence and recommendations while authorised owners decide operational action.
+        - article [ref=f1e847]:
+          - generic [ref=f1e848]: EVIDENCE BOUNDARY
+          - heading "What this project cannot do" [level=3] [ref=f1e849]
+          - paragraph [ref=f1e850]: It cannot identify a private DCP root cause, set a real service limit, or authorise a customer or payment action. It demonstrates a disciplined way to reach the next evidence based question.
+    - generic [ref=f1e139]:
+      - generic [ref=f1e140]: Settlement Service Intelligence · Candidate demonstration
+      - generic [ref=f1e141]: Built from public context + generated sample data

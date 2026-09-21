@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interview demonstration using synthetic settlement-service workload data.">
+  <title>Settlement Service Intelligence | Demonstration</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="rail">
+      <div class="brand-mark">SI</div>
+      <div class="brand-label"><span>Service monitor</span><small>SYNTHETIC CASE</small></div>
+      <div class="rail-rule"></div>
+      <nav aria-label="Dashboard sections">
+        <button class="nav-item active" data-view="overview"><span class="nav-icon">◫</span>Overview</button>
+        <button class="nav-item" data-view="drivers"><span class="nav-icon">⌕</span>Drivers &amp; forecast</button>
+        <button class="nav-item" data-view="scenario"><span class="nav-icon">⤴</span>Scenario lab</button>
+        <button class="nav-item" data-view="hypotheses"><span class="nav-icon">?</span>Hypothesis tests</button>
+        <button class="nav-item" data-view="impact"><span class="nav-icon">◎</span>Customer impact</button>
+        <button class="nav-item" data-view="improvements"><span class="nav-icon">↻</span>Improvement register</button>
+        <button class="nav-item" data-view="approach"><span class="nav-icon">◇</span>Analyst approach</button>
+        <button class="nav-item" data-view="note"><span class="nav-icon">▤</span>Service note</button>
+        <button class="nav-item" data-view="evidence"><span class="nav-icon">✓</span>Evidence &amp; limits</button>
+      </nav>
+      <div class="rail-spacer"></div>
+      <div class="rail-context">
+        <span class="context-dot"></span>
+        <div><strong>Public case</strong><small>14 Sep 2026 circular</small></div>
+      </div>
+      <div class="rail-foot">LOCAL DEMO<br>NO LIVE SYSTEM CONNECTION</div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <div class="crumb">SERVICE MONITOR <span>/</span> SETTLEMENT &amp; INSIGHT</div>
+        <div class="top-actions"><span class="synthetic-pill"><i></i>SYNTHETIC DATA</span><span class="avatar">RS</span></div>
+      </header>
+
+      <div class="demo-banner"><strong>DEMONSTRATION ONLY</strong><span>Every participant, metric, threshold and service run shown here is generated. No Elexon operational data is used.</span></div>
+
+      <div class="content-wrap">
+        <section class="view active" id="view-overview">
+          <div class="page-heading">
+            <div><div class="eyebrow">CURRENT SERVICE STATE</div><h1>Is the demo queue under pressure?</h1><p>Use arrivals, processing, queue and run context to decide what to investigate next.</p></div>
+            <div class="period-chip"><span class="live-dot"></span><div><strong>14 day sample</strong><small>Fixed seed synthetic data</small></div></div>
+          </div>
+          <div class="signal-note"><span class="signal-icon">i</span><div><strong>What the public circular says</strong><p>On 14 September 2026, Elexon reported DCP capacity pressure linked to MSID/AMSID submission volumes above submitted forecasts, with downstream Settlement and payment runs delayed. The circular does not publish a lower-level technical cause.</p></div><a href="https://elexonexternal.newsweaver.com/924j6pkkru/1gsurqf0ylu" target="_blank" rel="noreferrer">EL04799 ↗</a></div>
+
+          <div class="metric-grid" id="overviewMetrics">
+            <article class="metric-card state-card"><div class="metric-label">DEMO SERVICE STATE <span class="help" title="Illustrative alert rules only">?</span></div><div class="metric-value"><span id="stateBadge" class="state-badge">Loading</span></div><div class="metric-foot">Demo thresholds, not Elexon limits</div></article>
+            <article class="metric-card"><div class="metric-label">OPEN REGISTRATION QUEUE <span class="help" title="Generated work received but not yet completed">?</span></div><div class="metric-value" id="backlogValue">—</div><div class="metric-foot"><span id="backlogDelta">—</span> vs prior 24h</div></article>
+            <article class="metric-card"><div class="metric-label">LATEST HOUR THROUGHPUT <span class="help" title="Generated submissions completed in the latest hour">?</span></div><div class="metric-value" id="throughputValue">—</div><div class="metric-foot">Processed submissions in latest demo hour</div></article>
+            <article class="metric-card"><div class="metric-label">FORECAST VARIANCE <span class="help" title="Generated actual submissions minus generated forecast, divided by forecast">?</span></div><div class="metric-value" id="varianceValue">—</div><div class="metric-foot">Generated actuals vs generated forecast, 24h</div></article>
+            <article class="metric-card risk-card"><div class="metric-label">SYNTHETIC RUNS DELAYED</div><div class="metric-value" id="runsValue">—</div><div class="metric-foot">Demo Settlement/payment run records, 24h</div></article>
+          </div>
+
+          <div class="section-title-row"><div><div class="eyebrow">CONTROL AND DETECT</div><h2>What is changing now?</h2></div><div class="legend"><span><i class="legend-received"></i>Arrivals</span><span><i class="legend-processed"></i>Processed</span><span><i class="legend-backlog"></i>Backlog</span></div></div>
+          <div class="chart-grid">
+            <article class="panel chart-panel wide"><div class="panel-heading"><div><h3>Arrivals vs processed</h3><p>Hourly registration submissions • last 7 demo days</p></div><span class="panel-tag">VOLUME / HOUR</span></div><div id="flowChart" class="chart chart-large"></div></article>
+            <article class="panel chart-panel"><div class="panel-heading"><div><h3>Queue and latency</h3><p>Backlog size and processing latency</p></div><span class="panel-tag">TREND</span></div><div id="queueChart" class="chart chart-large"></div></article>
+          </div>
+          <div class="chart-grid lower-grid">
+            <article class="panel"><div class="panel-heading"><div><h3>Scheduled service runs</h3><p>Illustrative run table; not actual settlement performance</p></div><span id="runSummary" class="panel-tag">—</span></div><div class="table-wrap"><table><thead><tr><th>Demo time</th><th>Run type</th><th>Delay</th><th>Demo state</th></tr></thead><tbody id="runsTable"></tbody></table></div></article>
+            <article class="panel chart-panel"><div class="panel-heading"><div><h3>Validation &amp; retries</h3><p>Failure rate (teal) and retry rate (amber), by hour</p></div><span class="panel-tag">RATE / %</span></div><div id="qualityChart" class="chart chart-large"></div></article>
+            <article class="panel next-action"><div class="eyebrow">ANALYST VIEW</div><h3>What the measures mean</h3><p>Arrivals show incoming work. Throughput shows completed work. Queue growth shows whether demand is outpacing processing. Latency and scheduled run status add service impact context.</p><button class="text-button" data-go="drivers">Open workload investigation <span>→</span></button></article>
+          </div>
+          <div class="insight-foot"><span class="foot-mark">↗</span><p><strong>Descriptive</strong> what changed • <strong>Predictive</strong> a conditional queue projection • <strong>Prescriptive</strong> options to assess with service owners.</p></div>
+        </section>
+
+        <section class="view" id="view-drivers">
+          <div class="page-heading"><div><div class="eyebrow">INVESTIGATE</div><h1>Which workloads are driving the queue?</h1><p>Compare synthetic participants and workloads to decide where evidence should be checked first.</p></div><span class="synthetic-pill"><i></i>GENERATED SAMPLE</span></div>
+          <div class="chart-grid">
+            <article class="panel chart-panel"><div class="panel-heading"><div><h3>Forecast variance by segment</h3><p>Largest positive deviations in the full 14-day demo window</p></div><span class="panel-tag">ACTUAL − FORECAST</span></div><div id="varianceChart" class="chart chart-bars"></div></article>
+            <article class="panel"><div class="panel-heading"><div><h3>Questions before acting</h3><p>Keep the investigation evidence-led</p></div></div><ul class="check-list"><li><span>01</span>Is the increase broad-based or concentrated by participant/workload?</li><li><span>02</span>Does throughput fall behind arrivals, or is the queue recovering?</li><li><span>03</span>Are retries and validation failures adding avoidable work?</li><li><span>04</span>Which downstream deadlines are actually at risk?</li></ul></article>
+          </div>
+          <article class="panel table-panel"><div class="panel-heading"><div><h3>Segment investigation</h3><p>Sorted by positive actual-minus-forecast volume • synthetic participants only</p></div><select id="driverWindow" aria-label="Driver window"><option value="168">Last 7 days</option><option value="336">Full 14 days</option></select></div><div class="table-wrap"><table><thead><tr><th>Participant</th><th>Type</th><th>Workload</th><th>Actual</th><th>Forecast</th><th>Variance</th><th>Peak queue</th><th>Retries</th></tr></thead><tbody id="driversTable"></tbody></table></div></article>
+          <div class="callout muted"><strong>Interpretation:</strong> A large forecast miss points to where to investigate first. It does not prove the forecast process caused the service incident.</div>
+        </section>
+
+        <section class="view" id="view-scenario">
+          <div class="page-heading"><div><div class="eyebrow">SCENARIO ANALYSIS</div><h1>What happens if demand changes?</h1><p>Change the assumptions and inspect a simple queue balance. This is a conditional calculation.</p></div><span class="formula-chip">queue = queue + arrivals − capacity</span></div>
+          <div class="scenario-layout">
+            <article class="panel controls-panel"><div class="panel-heading"><div><h3>Set the assumptions</h3><p>Starting rates use the last 72 synthetic hours.</p></div></div>
+              <label class="control-label" for="demandSlider"><span>New pair demand increase</span><strong id="demandLabel">+20%</strong></label><input id="demandSlider" type="range" min="100" max="200" step="10" value="120"><div class="range-ticks"><span>Base</span><span>+50%</span><span>+100%</span></div>
+              <label class="control-label spaced" for="throttleSlider"><span>Historic resubmissions throttled</span><strong id="throttleLabel">0%</strong></label><input id="throttleSlider" type="range" min="0" max="100" step="10" value="0"><div class="range-ticks"><span>None</span><span>50%</span><span>100%</span></div>
+              <label class="control-label spaced" for="reserveSlider"><span>Capacity reserved outside registration queue</span><strong id="reserveLabel">0%</strong></label><input id="reserveSlider" type="range" min="0" max="30" step="5" value="0"><div class="range-ticks"><span>0%</span><span>15%</span><span>30%</span></div>
+              <label class="control-label spaced" for="horizonSelect"><span>Projection horizon</span></label><select id="horizonSelect" class="wide-select"><option value="24">24 hours</option><option value="48">48 hours</option><option value="72">72 hours</option></select>
+              <div class="assumption-box"><strong>Assumptions</strong><p>Steady hourly arrivals and processing capacity; no recovery surge, seasonality, dependency delays, or unknown constraints. Reserving capacity reduces the demo registration budget; downstream run behaviour is not forecast.</p></div>
+            </article>
+            <div class="scenario-results"><div class="metric-grid result-metrics"><article class="metric-card"><div class="metric-label">STARTING BACKLOG</div><div class="metric-value" id="scenarioStart">—</div><div class="metric-foot">Synthetic current queue</div></article><article class="metric-card"><div class="metric-label">PROJECTED BACKLOG</div><div class="metric-value" id="scenarioEnd">—</div><div class="metric-foot" id="scenarioChange">—</div></article><article class="metric-card"><div class="metric-label">NET QUEUE GROWTH</div><div class="metric-value" id="scenarioGrowth">—</div><div class="metric-foot">Per hour under current assumptions</div></article><article class="metric-card"><div class="metric-label">TIME TO DEMO ALERT</div><div class="metric-value" id="scenarioTime">—</div><div class="metric-foot">Only if queue is below 900 and growing</div></article></div>
+              <article class="panel scenario-chart-panel"><div class="panel-heading"><div><h3>Queue projection</h3><p>Current queue compared with scenario horizon</p></div><span class="panel-tag">STEADY-RATE MODEL</span></div><div id="scenarioChart" class="chart chart-large"></div></article>
+              <article class="panel scenario-explain"><div class="eyebrow">WHAT THIS CAN SUPPORT</div><p>Compare trade-offs and identify the assumptions that matter. Any real throttling, priority, or capacity decision would require confirmed service rules, customer impacts, operational ownership, and measured telemetry.</p></article>
+            </div>
+          </div>
+        </section>
+
+        <section class="view" id="view-hypotheses">
+          <div class="page-heading"><div><div class="eyebrow">INVESTIGATION LOGIC</div><h1>Which explanations fit the sample?</h1><p>These tests describe the generated data. They are not conclusions about Elexon systems.</p></div><span class="synthetic-pill"><i></i>SYNTHETIC EVIDENCE</span></div>
+          <div id="hypothesisList" class="evidence-grid"></div>
+        </section>
+
+        <section class="view" id="view-impact">
+          <div class="page-heading"><div><div class="eyebrow">CUSTOMER AND SETTLEMENT</div><h1>Who could be affected?</h1><p>Translate service signals into the facts an operational owner must confirm.</p></div></div>
+          <div id="impactPanel" class="evidence-grid"></div>
+          <article class="panel"><div class="eyebrow">SERVICE PROVIDER QUESTIONS</div><h2>Evidence to request</h2><div class="recommendation-grid"><div><span>01</span><strong>Throughput</strong><p>What was received, completed and still open in each interval?</p></div><div><span>02</span><strong>Quality</strong><p>Which failures and retries added work or delayed completion?</p></div><div><span>03</span><strong>Dependencies</strong><p>Were any releases, interfaces or upstream services changing?</p></div><div><span>04</span><strong>Recovery</strong><p>What is the expected recovery point and how is it measured?</p></div></div></article>
+        </section>
+
+        <section class="view" id="view-improvements">
+          <div class="page-heading"><div><div class="eyebrow">IMPROVEMENT REGISTER</div><h1>What should be tested with the service owner?</h1><p>Each idea has an owner, measure and risk before it is treated as a decision.</p></div></div>
+          <article class="panel table-panel"><div class="table-wrap"><table><thead><tr><th>Problem</th><th>Proposed action</th><th>Benefit</th><th>Risk</th><th>Measure</th><th>Status</th></tr></thead><tbody id="improvementTable"></tbody></table></div></article>
+        </section>
+
+        <section class="view" id="view-approach">
+          <div class="page-heading"><div><div class="eyebrow">ROLE ALIGNMENT</div><h1>How I would investigate as a Service Analyst</h1><p>A practical sequence for an Elexon service question.</p></div></div>
+          <article class="panel approach-panel"><ol class="approach-list"><li><strong>Understand the service and customer question.</strong><span>Clarify the process, deadline and decision that matter.</span></li><li><strong>Confirm the BSC and process context.</strong><span>Identify the relevant service, obligation, owner and escalation route.</span></li><li><strong>Validate the evidence.</strong><span>Check completeness, types, timing, duplicates and reconciliation before analysis.</span></li><li><strong>Quantify the impact.</strong><span>Measure arrivals, completions, backlog, latency, quality and affected runs.</span></li><li><strong>Segment and investigate.</strong><span>Compare participants, workloads and time windows without assigning blame.</span></li><li><strong>Test hypotheses.</strong><span>Use transparent SQL and Python calculations with stated limits.</span></li><li><strong>Coordinate and communicate.</strong><span>Share confirmed facts, uncertainty, next actions and the next update time.</span></li><li><strong>Monitor recovery and capture learning.</strong><span>Measure whether the chosen action worked and update the runbook.</span></li></ol></article>
+          <div class="chart-grid"><article class="panel"><div class="eyebrow">ELEXON CONTEXT</div><h3>Who does what</h3><p>Elexon administers the BSC and Settlement arrangements. NESO balances the physical system. BSC Agents provide defined services under managed requirements. The analyst prepares evidence and recommendations while authorised owners decide operational action.</p></article><article class="panel"><div class="eyebrow">EVIDENCE BOUNDARY</div><h3>What this project cannot do</h3><p>It cannot identify a private DCP root cause, set a real service limit, or authorise a customer or payment action. It demonstrates a disciplined way to reach the next evidence based question.</p></article></div>
+        </section>
+
+        <section class="view" id="view-note">
+          <div class="page-heading"><div><div class="eyebrow">COMMUNICATION</div><h1>How I would write the service update</h1><p>Deterministic wording assembled from the synthetic dashboard state.</p></div><button class="primary-button" id="copyNote">Copy note</button></div>
+          <div class="note-warning"><span>!</span><div><strong>DEMO TEMPLATE • DO NOT SEND AS AN OPERATIONAL UPDATE</strong><p>This note contains fabricated metrics and a synthetic investigation lead. It is an interview demonstration of how an analyst could structure a concise update.</p></div></div>
+          <article class="panel note-panel"><div class="panel-heading"><div><h3>Generated service note</h3><p>Rules-based template • no generative model</p></div><span class="panel-tag">SYNTHETIC</span></div><pre id="incidentNote">Preparing note…</pre></article>
+          <div class="chart-grid">
+            <article class="panel"><div class="eyebrow">CUSTOMER COMMUNICATION CHECK</div><h3>Before sending an update</h3><ul class="check-list compact"><li><span>01</span>Confirm which participants, services and dates are affected.</li><li><span>02</span>Separate confirmed facts from investigation hypotheses.</li><li><span>03</span>State the action customers should take, if any.</li><li><span>04</span>Give a next-update time agreed by the incident owner.</li></ul></article>
+            <article class="panel"><div class="eyebrow">ANALYST HANDOFF</div><h3>Keep a useful record</h3><p>Record source, timestamp, metric definition, affected workload, checks performed, open questions, owner and next review time. This makes the next shift’s investigation easier to continue.</p></article>
+          </div>
+        </section>
+
+        <section class="view" id="view-evidence">
+          <div class="page-heading"><div><div class="eyebrow">EVIDENCE BOUNDARIES</div><h1>What is known, and what still needs evidence?</h1><p>Keep public statements, proposals, assumptions and unknowns in separate sections.</p></div><span class="source-chip">SOURCE REVIEWED · 21 SEP 2026</span></div>
+          <div class="evidence-grid">
+            <article class="panel evidence-card known"><div class="evidence-kicker"><span>01</span>PUBLICLY REPORTED</div><h3>What we know</h3><ul><li>The 14 September circular reports a DCP incident and delayed scheduled Settlement/payment runs.</li><li>Elexon links pressure to significantly increased MSID/AMSID Pair submissions above submitted forecasts.</li><li>The circular says DCP was operating at or near maximum capacity and describes temporary submission controls.</li><li>FMAR is a separate future programme; its consultation proposes a phased September 2027 go-live.</li></ul><a href="https://elexonexternal.newsweaver.com/924j6pkkru/1gsurqf0ylu" target="_blank" rel="noreferrer">Read EL04799 ↗</a></article>
+            <article class="panel evidence-card unknown"><div class="evidence-kicker"><span>02</span>NOT IN PUBLIC SOURCES</div><h3>What we do not know</h3><ul><li>The lower-level technical cause or internal DCP architecture.</li><li>Actual arrival rates, backlog, throughput, processing latency or failure/retry counts.</li><li>Internal operational thresholds, service-level targets, or exact capacity headroom.</li><li>Whether any individual participant or submission type caused a particular share of the incident.</li><li>Whether future FMAR design will change DCP demand or address this event.</li></ul></article>
+            <article class="panel evidence-card next"><div class="evidence-kicker"><span>03</span>IF TELEMETRY WERE AVAILABLE</div><h3>What to check next</h3><ul><li>Align metric definitions and reporting windows with service owners.</li><li>Compare forecast and actual arrivals by participant/workload, then arrivals against completions.</li><li>Trend queue age/backlog, processing latency, validation failures and retries.</li><li>Map thresholds to agreed service objectives and the Settlement/payment run calendar.</li><li>Confirm customer impacts and ownership before recommending controls.</li></ul></article>
+          </div>
+          <article class="panel validation-panel"><div class="eyebrow">DATA CONTROL</div><h2>Validation before analysis</h2><p id="validationSummary">Checking the generated sample...</p><div id="validationChecks" class="tag-list"></div></article>
+          <article class="panel recommendation-panel"><div class="eyebrow">OPTIONS TO ASSESS • NOT CLAIMS ABOUT ELEXON</div><h2>Operational ideas worth testing</h2><div class="recommendation-grid"><div><span>01</span><strong>Rolling forecasts</strong><p>Use base, expected and high-demand cases with regular participant updates.</p></div><div><span>02</span><strong>Early warning</strong><p>Monitor arrivals vs throughput, queue age and latency against agreed objectives.</p></div><div><span>03</span><strong>Workload view</strong><p>Segment volumes, retries and forecast error to direct investigation.</p></div><div><span>04</span><strong>Demand controls</strong><p>Assess scheduling or throttling of non-critical resubmissions with service owners.</p></div><div><span>05</span><strong>Capacity evidence</strong><p>Stress-test above forecast volumes and evaluate isolation/reserved capacity if feasible.</p></div><div><span>06</span><strong>Service learning</strong><p>Feed verified lessons into future flexibility registration and customer guidance.</p></div></div></article>
+          <div class="source-row"><span>Key sources</span><a href="https://www.elexon.co.uk/bsc/article/help-shape-the-data-and-calculation-platform-requirements/" target="_blank" rel="noreferrer">DCP demand survey ↗</a><a href="https://bscdocs.elexon.co.uk/service-descriptions/sva-ssa-bsc-service-description" target="_blank" rel="noreferrer">SVAA service description ↗</a><a href="https://www.elexon.co.uk/flexibility-markets/consultation/fmar-design-implementation-consultation/" target="_blank" rel="noreferrer">FMAR consultation ↗</a></div>
+        </section>
+      </div>
+      <footer class="page-footer"><span>Settlement Service Intelligence · Candidate demonstration</span><span>Built from public context + generated sample data</span></footer>
+    </main>
+  </div>
+  <script src="/dashboard.js" defer></script>
+</body>
+</html>

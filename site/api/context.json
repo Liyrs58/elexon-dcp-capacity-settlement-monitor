@@ -1,0 +1,10 @@
+{
+  "service": "Elexon Settlement and Insight service context",
+  "analyst_role": "Validate evidence, monitor risk, investigate, coordinate and communicate.",
+  "elexon": "Administers the BSC and the Settlement arrangements.",
+  "neso": "Balances physical electricity supply and demand in real time.",
+  "customer": "BSC Parties and affected service users whose submissions or Settlement outcomes may be impacted.",
+  "service_owner": "Authorised Elexon owner who decides operational action after reviewing evidence.",
+  "vendor": "Relevant BSC Agent or service provider asked for throughput, failures, latency, dependencies and recovery evidence.",
+  "analyst_boundary": "The analyst prepares evidence and recommendations. The analyst does not authorise payment delays or claim a private root cause."
+}

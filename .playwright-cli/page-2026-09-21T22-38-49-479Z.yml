@@ -1,0 +1,90 @@
+- generic [ref=e2]:
+  - complementary [ref=e3]:
+    - generic [ref=e4]: SI
+    - generic [ref=e5]:
+      - generic [ref=e6]: Service intelligence
+      - generic [ref=e7]: INTERVIEW CASE STUDY
+    - navigation "Dashboard sections" [ref=e9]:
+      - button "◫ Overview" [ref=e10] [cursor=pointer]:
+        - generic [ref=e11]: ◫
+        - text: Overview
+      - button "⌕ Drivers & forecast" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: ⌕
+        - text: Drivers & forecast
+      - button "⤴ Scenario lab" [ref=e14] [cursor=pointer]:
+        - generic [ref=e15]: ⤴
+        - text: Scenario lab
+      - button "? Hypothesis tests" [ref=e16] [cursor=pointer]:
+        - generic [ref=e17]: "?"
+        - text: Hypothesis tests
+      - button "◎ Customer impact" [ref=e18] [cursor=pointer]:
+        - generic [ref=e19]: ◎
+        - text: Customer impact
+      - button "↻ Improvement register" [ref=e20] [cursor=pointer]:
+        - generic [ref=e21]: ↻
+        - text: Improvement register
+      - button "◇ Analyst approach" [active] [ref=e22] [cursor=pointer]:
+        - generic [ref=e23]: ◇
+        - text: Analyst approach
+      - button "▤ Service note" [ref=e24] [cursor=pointer]:
+        - generic [ref=e25]: ▤
+        - text: Service note
+      - button "✓ Evidence & limits" [ref=e26] [cursor=pointer]:
+        - generic [ref=e27]: ✓
+        - text: Evidence & limits
+    - generic [ref=e31]:
+      - strong [ref=e32]: Public case
+      - generic [ref=e33]: 14 Sep 2026 circular
+    - generic [ref=e34]: LOCAL DEMONO LIVE SYSTEM CONNECTION
+  - main [ref=e35]:
+    - generic [ref=e36]:
+      - generic [ref=e37]: SETTLEMENT & INSIGHT / SERVICE MONITOR
+      - generic [ref=e38]:
+        - generic [ref=e39]: SYNTHETIC DATA
+        - generic [ref=e41]: RS
+    - generic [ref=e42]:
+      - strong [ref=e43]: DEMONSTRATION ONLY
+      - generic [ref=e44]: Every participant, metric, threshold and service run shown here is generated. No Elexon operational data is used.
+    - generic [ref=e816]:
+      - generic [ref=e818]:
+        - generic [ref=e819]: ROLE ALIGNMENT
+        - heading "How I would approach this" [level=1] [ref=e820]
+        - paragraph [ref=e821]: A practical sequence for an Elexon Service Analyst.
+      - article [ref=e822]:
+        - list [ref=e823]:
+          - listitem [ref=e824]:
+            - strong [ref=e825]: Understand the service and customer question.
+            - generic [ref=e826]: Clarify the process, deadline and decision that matter.
+          - listitem [ref=e827]:
+            - strong [ref=e828]: Confirm the BSC and process context.
+            - generic [ref=e829]: Identify the relevant service, obligation, owner and escalation route.
+          - listitem [ref=e830]:
+            - strong [ref=e831]: Validate the evidence.
+            - generic [ref=e832]: Check completeness, types, timing, duplicates and reconciliation before analysis.
+          - listitem [ref=e833]:
+            - strong [ref=e834]: Quantify the impact.
+            - generic [ref=e835]: Measure arrivals, completions, backlog, latency, quality and affected runs.
+          - listitem [ref=e836]:
+            - strong [ref=e837]: Segment and investigate.
+            - generic [ref=e838]: Compare participants, workloads and time windows without assigning blame.
+          - listitem [ref=e839]:
+            - strong [ref=e840]: Test hypotheses.
+            - generic [ref=e841]: Use transparent SQL and Python calculations with stated limits.
+          - listitem [ref=e842]:
+            - strong [ref=e843]: Coordinate and communicate.
+            - generic [ref=e844]: Share confirmed facts, uncertainty, next actions and the next update time.
+          - listitem [ref=e845]:
+            - strong [ref=e846]: Monitor recovery and capture learning.
+            - generic [ref=e847]: Measure whether the chosen action worked and update the runbook.
+      - generic [ref=e848]:
+        - article [ref=e849]:
+          - generic [ref=e850]: ELEXON CONTEXT
+          - heading "Who does what" [level=3] [ref=e851]
+          - paragraph [ref=e852]: Elexon administers the BSC and Settlement arrangements. NESO balances the physical system. BSC Agents provide defined services under managed requirements. The analyst prepares evidence and recommendations while authorised owners decide operational action.
+        - article [ref=e853]:
+          - generic [ref=e854]: EVIDENCE BOUNDARY
+          - heading "What this project cannot do" [level=3] [ref=e855]
+          - paragraph [ref=e856]: It cannot identify a private DCP root cause, set a real service limit, or authorise a customer or payment action. It demonstrates a disciplined way to reach the next evidence based question.
+    - generic [ref=e145]:
+      - generic [ref=e146]: Settlement Service Intelligence · Candidate demonstration
+      - generic [ref=e147]: Built from public context + generated sample data

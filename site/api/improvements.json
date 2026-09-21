@@ -1,0 +1,42 @@
+[
+  {
+    "id": "IMP01",
+    "problem": "Forecasts can become stale as flexible asset demand changes.",
+    "action": "Use rolling participant forecasts with base, expected and high cases.",
+    "benefit": "Earlier warning of demand pressure.",
+    "risk": "Forecast administration and inconsistent submissions.",
+    "owner": "Service owner and participant relationship team.",
+    "measure": "Forecast error and warning lead time.",
+    "status": "Candidate"
+  },
+  {
+    "id": "IMP02",
+    "problem": "A rising queue may be noticed after a critical run is already late.",
+    "action": "Monitor arrivals, completions, queue age and latency together.",
+    "benefit": "Faster controlled escalation.",
+    "risk": "False alerts without agreed definitions.",
+    "owner": "Operations and service provider.",
+    "measure": "Alert precision and time to acknowledgement.",
+    "status": "Candidate"
+  },
+  {
+    "id": "IMP03",
+    "problem": "Non critical historic resubmissions may compete with urgent work during a constrained period.",
+    "action": "Assess controlled scheduling or throttling with customer and rule checks.",
+    "benefit": "More capacity for critical workloads if feasible.",
+    "risk": "Customer obligations and queue ageing.",
+    "owner": "Authorised service owner.",
+    "measure": "Critical completion and recovery time.",
+    "status": "Hypothesis"
+  },
+  {
+    "id": "IMP04",
+    "problem": "Incident knowledge can be lost between shifts.",
+    "action": "Use a structured incident note and review log.",
+    "benefit": "Clearer handover and repeatable learning.",
+    "risk": "Documentation becomes stale.",
+    "owner": "Service analyst and incident lead.",
+    "measure": "Completeness of handover fields.",
+    "status": "Candidate"
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "error_count": 0,
+  "warning_count": 0,
+  "row_count": 6048,
+  "checks": [
+    "schema and required fields",
+    "types and finite non negative values",
+    "categories and timestamps",
+    "duplicate identity",
+    "forecast coverage",
+    "actual equals received",
+    "segment backlog reconciliation",
+    "fixed seed regeneration"
+  ],
+  "run_row_count": 28
+}

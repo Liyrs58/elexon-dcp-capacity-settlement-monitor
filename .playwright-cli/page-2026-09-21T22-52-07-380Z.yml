@@ -1,0 +1,201 @@
+- generic [ref=f1e2]:
+  - complementary [ref=f1e3]:
+    - generic [ref=f1e4]: SI
+    - generic [ref=f1e5]:
+      - generic [ref=f1e6]: Service monitor
+      - generic [ref=f1e7]: SYNTHETIC CASE
+    - navigation "Dashboard sections" [ref=f1e9]:
+      - button "Overview" [ref=f1e10] [cursor=pointer]
+      - button "Drivers & forecast" [ref=f1e11] [cursor=pointer]
+      - button "Scenario lab" [ref=f1e12] [cursor=pointer]
+      - button "Hypothesis tests" [active] [ref=f1e13] [cursor=pointer]
+      - button "Customer impact" [ref=f1e14] [cursor=pointer]
+      - button "Improvement register" [ref=f1e15] [cursor=pointer]
+      - button "Analyst approach" [ref=f1e16] [cursor=pointer]
+      - button "Service note" [ref=f1e17] [cursor=pointer]
+      - button "Evidence & limits" [ref=f1e18] [cursor=pointer]
+    - generic [ref=f1e22]:
+      - strong [ref=f1e23]: Public case
+      - generic [ref=f1e24]: 14 Sep 2026 circular
+    - generic [ref=f1e25]: LOCAL DEMONO LIVE SYSTEM CONNECTION
+  - main [ref=f1e26]:
+    - generic [ref=f1e27]:
+      - generic [ref=f1e28]: SERVICE MONITOR / SETTLEMENT & INSIGHT
+      - generic [ref=f1e29]:
+        - generic [ref=f1e30]: SYNTHETIC DATA
+        - generic [ref=f1e32]: RS
+    - generic [ref=f1e33]:
+      - strong [ref=f1e34]: DEMONSTRATION ONLY
+      - generic [ref=f1e35]: Every participant, metric, threshold and service run shown here is generated. No Elexon operational data is used.
+    - generic [ref=f1e592]:
+      - generic [ref=f1e593]:
+        - generic [ref=f1e594]:
+          - generic [ref=f1e595]: INVESTIGATION LOGIC
+          - heading "Which explanations fit the sample?" [level=1] [ref=f1e596]
+          - paragraph [ref=f1e597]: These tests describe the generated data. They are not conclusions about Elexon systems.
+        - generic [ref=f1e598]: SYNTHETIC EVIDENCE
+      - generic [ref=f1e600]:
+        - article [ref=f1e1188]:
+          - generic [ref=f1e1189]:
+            - generic [ref=f1e1190]: H1
+            - text: Medium CONFIDENCE
+          - heading "Is demand arriving faster than the service can process it?" [level=3] [ref=f1e1191]
+          - paragraph [ref=f1e1192]:
+            - strong [ref=f1e1193]: "Why it matters:"
+            - text: It helps distinguish an early service signal from a later symptom.
+          - paragraph [ref=f1e1194]:
+            - strong [ref=f1e1195]: "Method:"
+            - text: Transparent comparison of rates, totals and shares.
+          - paragraph [ref=f1e1196]:
+            - strong [ref=f1e1197]: "Result:"
+            - text: Late sample net queue growth is 0.20 records per row.
+          - paragraph [ref=f1e1198]:
+            - strong [ref=f1e1199]: "Conclusion:"
+            - text: Supported in this synthetic sample.
+          - paragraph [ref=f1e1200]:
+            - strong [ref=f1e1201]: "Limit:"
+            - text: The sample has no private service telemetry.
+          - paragraph [ref=f1e1202]:
+            - strong [ref=f1e1203]: "Next check:"
+            - text: Compare arrival and completion definitions with the service owner.
+        - article [ref=f1e1204]:
+          - generic [ref=f1e1205]:
+            - generic [ref=f1e1206]: H2
+            - text: Low to medium CONFIDENCE
+          - heading "Is forecast error an early signal of service pressure?" [level=3] [ref=f1e1207]
+          - paragraph [ref=f1e1208]:
+            - strong [ref=f1e1209]: "Why it matters:"
+            - text: It helps distinguish an early service signal from a later symptom.
+          - paragraph [ref=f1e1210]:
+            - strong [ref=f1e1211]: "Method:"
+            - text: Transparent comparison of rates, totals and shares.
+          - paragraph [ref=f1e1212]:
+            - strong [ref=f1e1213]: "Result:"
+            - text: Actual demand is +22.3% against the generated forecast.
+          - paragraph [ref=f1e1214]:
+            - strong [ref=f1e1215]: "Conclusion:"
+            - text: Supported as a leading signal in this demonstration.
+          - paragraph [ref=f1e1216]:
+            - strong [ref=f1e1217]: "Limit:"
+            - text: The generator makes the forecast and demand relationship illustrative.
+          - paragraph [ref=f1e1218]:
+            - strong [ref=f1e1219]: "Next check:"
+            - text: Test lead times and false alerts on real historical windows.
+        - article [ref=f1e1220]:
+          - generic [ref=f1e1221]:
+            - generic [ref=f1e1222]: H3
+            - text: Medium CONFIDENCE
+          - heading "Does one workload contribute disproportionately to excess demand?" [level=3] [ref=f1e1223]
+          - paragraph [ref=f1e1224]:
+            - strong [ref=f1e1225]: "Why it matters:"
+            - text: It helps distinguish an early service signal from a later symptom.
+          - paragraph [ref=f1e1226]:
+            - strong [ref=f1e1227]: "Method:"
+            - text: Transparent comparison of rates, totals and shares.
+          - paragraph [ref=f1e1228]:
+            - strong [ref=f1e1229]: "Result:"
+            - text: new MSID Pair contributes 40.1% of positive excess demand.
+          - paragraph [ref=f1e1230]:
+            - strong [ref=f1e1231]: "Conclusion:"
+            - text: Supported for new MSID Pair.
+          - paragraph [ref=f1e1232]:
+            - strong [ref=f1e1233]: "Limit:"
+            - text: Workload categories are synthetic and do not identify an Elexon cause.
+          - paragraph [ref=f1e1234]:
+            - strong [ref=f1e1235]: "Next check:"
+            - text: Compare workload definitions and processing effort using internal telemetry.
+        - article [ref=f1e1236]:
+          - generic [ref=f1e1237]:
+            - generic [ref=f1e1238]: H4
+            - text: Low CONFIDENCE
+          - heading "Could historic resubmissions create avoidable pressure?" [level=3] [ref=f1e1239]
+          - paragraph [ref=f1e1240]:
+            - strong [ref=f1e1241]: "Why it matters:"
+            - text: It helps distinguish an early service signal from a later symptom.
+          - paragraph [ref=f1e1242]:
+            - strong [ref=f1e1243]: "Method:"
+            - text: Transparent comparison of rates, totals and shares.
+          - paragraph [ref=f1e1244]:
+            - strong [ref=f1e1245]: "Result:"
+            - text: Historic resubmissions total 1,295 records in the sample.
+          - paragraph [ref=f1e1246]:
+            - strong [ref=f1e1247]: "Conclusion:"
+            - text: Worth testing as a control option, not proven as a cause.
+          - paragraph [ref=f1e1248]:
+            - strong [ref=f1e1249]: "Limit:"
+            - text: Volume alone does not measure processing cost or priority.
+          - paragraph [ref=f1e1250]:
+            - strong [ref=f1e1251]: "Next check:"
+            - text: Measure reprocessing effort and customer obligations before throttling.
+        - article [ref=f1e1252]:
+          - generic [ref=f1e1253]:
+            - generic [ref=f1e1254]: H5
+            - text: Low CONFIDENCE
+          - heading "Can temporary demand controls improve recovery?" [level=3] [ref=f1e1255]
+          - paragraph [ref=f1e1256]:
+            - strong [ref=f1e1257]: "Why it matters:"
+            - text: It helps distinguish an early service signal from a later symptom.
+          - paragraph [ref=f1e1258]:
+            - strong [ref=f1e1259]: "Method:"
+            - text: Transparent comparison of rates, totals and shares.
+          - paragraph [ref=f1e1260]:
+            - strong [ref=f1e1261]: "Result:"
+            - text: The sample contains 2 delayed scheduled run records.
+          - paragraph [ref=f1e1262]:
+            - strong [ref=f1e1263]: "Conclusion:"
+            - text: Scenario testing is needed; the generated history cannot prove an intervention effect.
+          - paragraph [ref=f1e1264]:
+            - strong [ref=f1e1265]: "Limit:"
+            - text: There is no observed before and after intervention in the source data.
+          - paragraph [ref=f1e1266]:
+            - strong [ref=f1e1267]: "Next check:"
+            - text: Run a controlled simulation with agreed service constraints.
+        - article [ref=f1e1268]:
+          - generic [ref=f1e1269]:
+            - generic [ref=f1e1270]: H6
+            - text: Medium CONFIDENCE
+          - heading "Would capacity expansion alone solve the issue?" [level=3] [ref=f1e1271]
+          - paragraph [ref=f1e1272]:
+            - strong [ref=f1e1273]: "Why it matters:"
+            - text: It helps distinguish an early service signal from a later symptom.
+          - paragraph [ref=f1e1274]:
+            - strong [ref=f1e1275]: "Method:"
+            - text: Transparent comparison of rates, totals and shares.
+          - paragraph [ref=f1e1276]:
+            - strong [ref=f1e1277]: "Result:"
+            - text: A demand rise can still exceed any fixed capacity under the scenario model.
+          - paragraph [ref=f1e1278]:
+            - strong [ref=f1e1279]: "Conclusion:"
+            - text: Rejected as a universal answer under sustained growth.
+          - paragraph [ref=f1e1280]:
+            - strong [ref=f1e1281]: "Limit:"
+            - text: This is a queue sensitivity result, not an architecture assessment.
+          - paragraph [ref=f1e1282]:
+            - strong [ref=f1e1283]: "Next check:"
+            - text: Stress test multiple demand and capacity cases with service owners.
+        - article [ref=f1e1284]:
+          - generic [ref=f1e1285]:
+            - generic [ref=f1e1286]: H7
+            - text: Low to medium CONFIDENCE
+          - heading "Does prioritising critical work reduce downstream risk?" [level=3] [ref=f1e1287]
+          - paragraph [ref=f1e1288]:
+            - strong [ref=f1e1289]: "Why it matters:"
+            - text: It helps distinguish an early service signal from a later symptom.
+          - paragraph [ref=f1e1290]:
+            - strong [ref=f1e1291]: "Method:"
+            - text: Transparent comparison of rates, totals and shares.
+          - paragraph [ref=f1e1292]:
+            - strong [ref=f1e1293]: "Result:"
+            - text: 26 of 28 critical sample runs are on time.
+          - paragraph [ref=f1e1294]:
+            - strong [ref=f1e1295]: "Conclusion:"
+            - text: Use prioritisation as a scenario to assess.
+          - paragraph [ref=f1e1296]:
+            - strong [ref=f1e1297]: "Limit:"
+            - text: Run status is generated from a simple queue rule.
+          - paragraph [ref=f1e1298]:
+            - strong [ref=f1e1299]: "Next check:"
+            - text: Define priority classes and completion measures with Settlement owners.
+    - generic [ref=f1e139]:
+      - generic [ref=f1e140]: Settlement Service Intelligence · Candidate demonstration
+      - generic [ref=f1e141]: Built from public context + generated sample data

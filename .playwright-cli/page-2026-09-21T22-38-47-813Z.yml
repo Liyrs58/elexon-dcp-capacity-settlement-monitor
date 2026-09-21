@@ -1,0 +1,94 @@
+- generic [ref=e2]:
+  - complementary [ref=e3]:
+    - generic [ref=e4]: SI
+    - generic [ref=e5]:
+      - generic [ref=e6]: Service intelligence
+      - generic [ref=e7]: INTERVIEW CASE STUDY
+    - navigation "Dashboard sections" [ref=e9]:
+      - button "◫ Overview" [ref=e10] [cursor=pointer]:
+        - generic [ref=e11]: ◫
+        - text: Overview
+      - button "⌕ Drivers & forecast" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: ⌕
+        - text: Drivers & forecast
+      - button "⤴ Scenario lab" [ref=e14] [cursor=pointer]:
+        - generic [ref=e15]: ⤴
+        - text: Scenario lab
+      - button "? Hypothesis tests" [ref=e16] [cursor=pointer]:
+        - generic [ref=e17]: "?"
+        - text: Hypothesis tests
+      - button "◎ Customer impact" [ref=e18] [cursor=pointer]:
+        - generic [ref=e19]: ◎
+        - text: Customer impact
+      - button "↻ Improvement register" [active] [ref=e20] [cursor=pointer]:
+        - generic [ref=e21]: ↻
+        - text: Improvement register
+      - button "◇ Analyst approach" [ref=e22] [cursor=pointer]:
+        - generic [ref=e23]: ◇
+        - text: Analyst approach
+      - button "▤ Service note" [ref=e24] [cursor=pointer]:
+        - generic [ref=e25]: ▤
+        - text: Service note
+      - button "✓ Evidence & limits" [ref=e26] [cursor=pointer]:
+        - generic [ref=e27]: ✓
+        - text: Evidence & limits
+    - generic [ref=e31]:
+      - strong [ref=e32]: Public case
+      - generic [ref=e33]: 14 Sep 2026 circular
+    - generic [ref=e34]: LOCAL DEMONO LIVE SYSTEM CONNECTION
+  - main [ref=e35]:
+    - generic [ref=e36]:
+      - generic [ref=e37]: SETTLEMENT & INSIGHT / SERVICE MONITOR
+      - generic [ref=e38]:
+        - generic [ref=e39]: SYNTHETIC DATA
+        - generic [ref=e41]: RS
+    - generic [ref=e42]:
+      - strong [ref=e43]: DEMONSTRATION ONLY
+      - generic [ref=e44]: Every participant, metric, threshold and service run shown here is generated. No Elexon operational data is used.
+    - generic [ref=e770]:
+      - generic [ref=e772]:
+        - generic [ref=e773]: CONTINUOUS IMPROVEMENT
+        - heading "Improvement register" [level=1] [ref=e774]
+        - paragraph [ref=e775]: Ideas are recorded with an owner, measure and risk before anyone treats them as a decision.
+      - article [ref=e776]:
+        - table [ref=e778]:
+          - rowgroup [ref=e779]:
+            - row [ref=e780]:
+              - columnheader "Problem" [ref=e781]
+              - columnheader "Proposed action" [ref=e782]
+              - columnheader "Benefit" [ref=e783]
+              - columnheader "Risk" [ref=e784]
+              - columnheader "Measure" [ref=e785]
+              - columnheader "Status" [ref=e786]
+          - rowgroup [ref=e787]:
+            - row [ref=e788]:
+              - cell "Forecasts can become stale as flexible asset demand changes." [ref=e789]
+              - cell "Use rolling participant forecasts with base, expected and high cases." [ref=e790]
+              - cell "Earlier warning of demand pressure." [ref=e791]
+              - cell "Forecast administration and inconsistent submissions." [ref=e792]
+              - cell "Forecast error and warning lead time." [ref=e793]
+              - cell "Candidate" [ref=e794]
+            - row [ref=e795]:
+              - cell "A rising queue may be noticed after a critical run is already late." [ref=e796]
+              - cell "Monitor arrivals, completions, queue age and latency together." [ref=e797]
+              - cell "Faster controlled escalation." [ref=e798]
+              - cell "False alerts without agreed definitions." [ref=e799]
+              - cell "Alert precision and time to acknowledgement." [ref=e800]
+              - cell "Candidate" [ref=e801]
+            - row [ref=e802]:
+              - cell "Non critical historic resubmissions may compete with urgent work during a constrained period." [ref=e803]
+              - cell "Assess controlled scheduling or throttling with customer and rule checks." [ref=e804]
+              - cell "More capacity for critical workloads if feasible." [ref=e805]
+              - cell "Customer obligations and queue ageing." [ref=e806]
+              - cell "Critical completion and recovery time." [ref=e807]
+              - cell "Hypothesis" [ref=e808]
+            - row [ref=e809]:
+              - cell "Incident knowledge can be lost between shifts." [ref=e810]
+              - cell "Use a structured incident note and review log." [ref=e811]
+              - cell "Clearer handover and repeatable learning." [ref=e812]
+              - cell "Documentation becomes stale." [ref=e813]
+              - cell "Completeness of handover fields." [ref=e814]
+              - cell "Candidate" [ref=e815]
+    - generic [ref=e145]:
+      - generic [ref=e146]: Settlement Service Intelligence · Candidate demonstration
+      - generic [ref=e147]: Built from public context + generated sample data

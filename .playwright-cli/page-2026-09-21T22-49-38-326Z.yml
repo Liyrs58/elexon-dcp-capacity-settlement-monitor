@@ -1,0 +1,123 @@
+- generic [ref=f1e2]:
+  - complementary [ref=f1e3]:
+    - generic [ref=f1e4]: SI
+    - generic [ref=f1e5]:
+      - generic [ref=f1e6]: Service monitor
+      - generic [ref=f1e7]: SYNTHETIC CASE
+    - navigation "Dashboard sections" [ref=f1e9]:
+      - button "Overview" [ref=f1e10] [cursor=pointer]
+      - button "Drivers & forecast" [ref=f1e11] [cursor=pointer]
+      - button "Scenario lab" [ref=f1e12] [cursor=pointer]
+      - button "Hypothesis tests" [ref=f1e13] [cursor=pointer]
+      - button "Customer impact" [ref=f1e14] [cursor=pointer]
+      - button "Improvement register" [ref=f1e15] [cursor=pointer]
+      - button "Analyst approach" [ref=f1e16] [cursor=pointer]
+      - button "Service note" [ref=f1e17] [cursor=pointer]
+      - button "Evidence & limits" [active] [ref=f1e18] [cursor=pointer]
+    - generic [ref=f1e22]:
+      - strong [ref=f1e23]: Public case
+      - generic [ref=f1e24]: 14 Sep 2026 circular
+    - generic [ref=f1e25]: LOCAL DEMONO LIVE SYSTEM CONNECTION
+  - main [ref=f1e26]:
+    - generic [ref=f1e27]:
+      - generic [ref=f1e28]: SERVICE MONITOR / SETTLEMENT & INSIGHT
+      - generic [ref=f1e29]:
+        - generic [ref=f1e30]: SYNTHETIC DATA
+        - generic [ref=f1e32]: RS
+    - generic [ref=f1e33]:
+      - strong [ref=f1e34]: DEMONSTRATION ONLY
+      - generic [ref=f1e35]: Every participant, metric, threshold and service run shown here is generated. No Elexon operational data is used.
+    - generic [ref=f1e887]:
+      - generic [ref=f1e888]:
+        - generic [ref=f1e889]:
+          - generic [ref=f1e890]: EVIDENCE BOUNDARIES
+          - heading "What is known, and what still needs evidence?" [level=1] [ref=f1e891]
+          - paragraph [ref=f1e892]: Keep public statements, proposals, assumptions and unknowns in separate sections.
+        - generic [ref=f1e893]: SOURCE REVIEWED · 21 SEP 2026
+      - generic [ref=f1e894]:
+        - article [ref=f1e895]:
+          - generic [ref=f1e896]:
+            - generic [ref=f1e897]: "01"
+            - text: PUBLICLY REPORTED
+          - heading "What we know" [level=3] [ref=f1e898]
+          - list [ref=f1e899]:
+            - listitem [ref=f1e900]: The 14 September circular reports a DCP incident and delayed scheduled Settlement/payment runs.
+            - listitem [ref=f1e901]: Elexon links pressure to significantly increased MSID/AMSID Pair submissions above submitted forecasts.
+            - listitem [ref=f1e902]: The circular says DCP was operating at or near maximum capacity and describes temporary submission controls.
+            - listitem [ref=f1e903]: FMAR is a separate future programme; its consultation proposes a phased September 2027 go-live.
+          - link "Read EL04799 ↗" [ref=f1e904] [cursor=pointer]:
+            - /url: https://elexonexternal.newsweaver.com/924j6pkkru/1gsurqf0ylu
+        - article [ref=f1e905]:
+          - generic [ref=f1e906]:
+            - generic [ref=f1e907]: "02"
+            - text: NOT IN PUBLIC SOURCES
+          - heading "What we do not know" [level=3] [ref=f1e908]
+          - list [ref=f1e909]:
+            - listitem [ref=f1e910]: The lower-level technical cause or internal DCP architecture.
+            - listitem [ref=f1e911]: Actual arrival rates, backlog, throughput, processing latency or failure/retry counts.
+            - listitem [ref=f1e912]: Internal operational thresholds, service-level targets, or exact capacity headroom.
+            - listitem [ref=f1e913]: Whether any individual participant or submission type caused a particular share of the incident.
+            - listitem [ref=f1e914]: Whether future FMAR design will change DCP demand or address this event.
+        - article [ref=f1e915]:
+          - generic [ref=f1e916]:
+            - generic [ref=f1e917]: "03"
+            - text: IF TELEMETRY WERE AVAILABLE
+          - heading "What to check next" [level=3] [ref=f1e918]
+          - list [ref=f1e919]:
+            - listitem [ref=f1e920]: Align metric definitions and reporting windows with service owners.
+            - listitem [ref=f1e921]: Compare forecast and actual arrivals by participant/workload, then arrivals against completions.
+            - listitem [ref=f1e922]: Trend queue age/backlog, processing latency, validation failures and retries.
+            - listitem [ref=f1e923]: Map thresholds to agreed service objectives and the Settlement/payment run calendar.
+            - listitem [ref=f1e924]: Confirm customer impacts and ownership before recommending controls.
+      - article [ref=f1e925]:
+        - generic [ref=f1e926]: DATA CONTROL
+        - heading "Validation before analysis" [level=2] [ref=f1e927]
+        - paragraph [ref=f1e928]: "PASS. 6048 interval rows passed 8 named controls before analysis. Errors: 0. Warnings: 0."
+        - generic [ref=f1e929]:
+          - generic [ref=f1e930]: schema and required fields
+          - generic [ref=f1e931]: types and finite non negative values
+          - generic [ref=f1e932]: categories and timestamps
+          - generic [ref=f1e933]: duplicate identity
+          - generic [ref=f1e934]: forecast coverage
+          - generic [ref=f1e935]: actual equals received
+          - generic [ref=f1e936]: segment backlog reconciliation
+          - generic [ref=f1e937]: fixed seed regeneration
+      - article [ref=f1e938]:
+        - generic [ref=f1e939]: OPTIONS TO ASSESS • NOT CLAIMS ABOUT ELEXON
+        - heading "Operational ideas worth testing" [level=2] [ref=f1e940]
+        - generic [ref=f1e941]:
+          - generic [ref=f1e942]:
+            - generic [ref=f1e943]: "01"
+            - strong [ref=f1e944]: Rolling forecasts
+            - paragraph [ref=f1e945]: Use base, expected and high-demand cases with regular participant updates.
+          - generic [ref=f1e946]:
+            - generic [ref=f1e947]: "02"
+            - strong [ref=f1e948]: Early warning
+            - paragraph [ref=f1e949]: Monitor arrivals vs throughput, queue age and latency against agreed objectives.
+          - generic [ref=f1e950]:
+            - generic [ref=f1e951]: "03"
+            - strong [ref=f1e952]: Workload view
+            - paragraph [ref=f1e953]: Segment volumes, retries and forecast error to direct investigation.
+          - generic [ref=f1e954]:
+            - generic [ref=f1e955]: "04"
+            - strong [ref=f1e956]: Demand controls
+            - paragraph [ref=f1e957]: Assess scheduling or throttling of non-critical resubmissions with service owners.
+          - generic [ref=f1e958]:
+            - generic [ref=f1e959]: "05"
+            - strong [ref=f1e960]: Capacity evidence
+            - paragraph [ref=f1e961]: Stress-test above forecast volumes and evaluate isolation/reserved capacity if feasible.
+          - generic [ref=f1e962]:
+            - generic [ref=f1e963]: "06"
+            - strong [ref=f1e964]: Service learning
+            - paragraph [ref=f1e965]: Feed verified lessons into future flexibility registration and customer guidance.
+      - generic [ref=f1e966]:
+        - generic [ref=f1e967]: Key sources
+        - link "DCP demand survey ↗" [ref=f1e968] [cursor=pointer]:
+          - /url: https://www.elexon.co.uk/bsc/article/help-shape-the-data-and-calculation-platform-requirements/
+        - link "SVAA service description ↗" [ref=f1e969] [cursor=pointer]:
+          - /url: https://bscdocs.elexon.co.uk/service-descriptions/sva-ssa-bsc-service-description
+        - link "FMAR consultation ↗" [ref=f1e970] [cursor=pointer]:
+          - /url: https://www.elexon.co.uk/flexibility-markets/consultation/fmar-design-implementation-consultation/
+    - generic [ref=f1e139]:
+      - generic [ref=f1e140]: Settlement Service Intelligence · Candidate demonstration
+      - generic [ref=f1e141]: Built from public context + generated sample data

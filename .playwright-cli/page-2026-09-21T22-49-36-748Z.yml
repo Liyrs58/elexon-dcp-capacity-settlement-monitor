@@ -1,0 +1,72 @@
+- generic [ref=f1e2]:
+  - complementary [ref=f1e3]:
+    - generic [ref=f1e4]: SI
+    - generic [ref=f1e5]:
+      - generic [ref=f1e6]: Service monitor
+      - generic [ref=f1e7]: SYNTHETIC CASE
+    - navigation "Dashboard sections" [ref=f1e9]:
+      - button "Overview" [ref=f1e10] [cursor=pointer]
+      - button "Drivers & forecast" [ref=f1e11] [cursor=pointer]
+      - button "Scenario lab" [ref=f1e12] [cursor=pointer]
+      - button "Hypothesis tests" [ref=f1e13] [cursor=pointer]
+      - button "Customer impact" [ref=f1e14] [cursor=pointer]
+      - button "Improvement register" [ref=f1e15] [cursor=pointer]
+      - button "Analyst approach" [ref=f1e16] [cursor=pointer]
+      - button "Service note" [active] [ref=f1e17] [cursor=pointer]
+      - button "Evidence & limits" [ref=f1e18] [cursor=pointer]
+    - generic [ref=f1e22]:
+      - strong [ref=f1e23]: Public case
+      - generic [ref=f1e24]: 14 Sep 2026 circular
+    - generic [ref=f1e25]: LOCAL DEMONO LIVE SYSTEM CONNECTION
+  - main [ref=f1e26]:
+    - generic [ref=f1e27]:
+      - generic [ref=f1e28]: SERVICE MONITOR / SETTLEMENT & INSIGHT
+      - generic [ref=f1e29]:
+        - generic [ref=f1e30]: SYNTHETIC DATA
+        - generic [ref=f1e32]: RS
+    - generic [ref=f1e33]:
+      - strong [ref=f1e34]: DEMONSTRATION ONLY
+      - generic [ref=f1e35]: Every participant, metric, threshold and service run shown here is generated. No Elexon operational data is used.
+    - generic [ref=f1e851]:
+      - generic [ref=f1e852]:
+        - generic [ref=f1e853]:
+          - generic [ref=f1e854]: COMMUNICATION
+          - heading "How I would write the service update" [level=1] [ref=f1e855]
+          - paragraph [ref=f1e856]: Deterministic wording assembled from the synthetic dashboard state.
+        - button "Copy note" [ref=f1e857] [cursor=pointer]
+      - generic [ref=f1e858]:
+        - generic [ref=f1e859]: "!"
+        - generic [ref=f1e860]:
+          - strong [ref=f1e861]: DEMO TEMPLATE • DO NOT SEND AS AN OPERATIONAL UPDATE
+          - paragraph [ref=f1e862]: This note contains fabricated metrics and a synthetic investigation lead. It is an interview demonstration of how an analyst could structure a concise update.
+      - article [ref=f1e863]:
+        - generic [ref=f1e864]:
+          - generic [ref=f1e865]:
+            - heading "Generated service note" [level=3] [ref=f1e866]
+            - paragraph [ref=f1e867]: Rules-based template • no generative model
+          - generic [ref=f1e868]: SYNTHETIC
+        - generic [ref=f1e869]: "SYNTHETIC DEMONSTRATION — not an Elexon incident update. State: At risk. Generated registration backlog is 602; the prior-24-hour backlog change is +158. Generated average processing latency is 52.5 minutes. Generated submissions are +66% against the sample forecast. The demo run table marks 1 of 2 synthetic scheduled runs as delayed. Investigation lead: The largest positive forecast deviation in this generated sample is SYN-VLP-01 / new MSID Pair (+237 submissions). Next checks before communicating operationally: confirm metric definitions and data freshness; compare arrivals, completed work and backlog by workload; validate any affected run schedule with service owners; check participant/customer impact; agree the next update time with the incident lead. This sample contains no customer or Elexon operational data."
+      - generic [ref=f1e870]:
+        - article [ref=f1e871]:
+          - generic [ref=f1e872]: CUSTOMER COMMUNICATION CHECK
+          - heading "Before sending an update" [level=3] [ref=f1e873]
+          - list [ref=f1e874]:
+            - listitem [ref=f1e875]:
+              - generic [ref=f1e876]: "01"
+              - text: Confirm which participants, services and dates are affected.
+            - listitem [ref=f1e877]:
+              - generic [ref=f1e878]: "02"
+              - text: Separate confirmed facts from investigation hypotheses.
+            - listitem [ref=f1e879]:
+              - generic [ref=f1e880]: "03"
+              - text: State the action customers should take, if any.
+            - listitem [ref=f1e881]:
+              - generic [ref=f1e882]: "04"
+              - text: Give a next-update time agreed by the incident owner.
+        - article [ref=f1e883]:
+          - generic [ref=f1e884]: ANALYST HANDOFF
+          - heading "Keep a useful record" [level=3] [ref=f1e885]
+          - paragraph [ref=f1e886]: Record source, timestamp, metric definition, affected workload, checks performed, open questions, owner and next review time. This makes the next shift’s investigation easier to continue.
+    - generic [ref=f1e139]:
+      - generic [ref=f1e140]: Settlement Service Intelligence · Candidate demonstration
+      - generic [ref=f1e141]: Built from public context + generated sample data

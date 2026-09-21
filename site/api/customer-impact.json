@@ -1,0 +1,10 @@
+{
+  "state": "At risk",
+  "who_may_be_affected": "Participants submitting registration data and teams relying on scheduled Settlement or payment activity.",
+  "potential_settlement_impact": "A delayed supporting service may delay a downstream run. The sample does not quantify a real impact.",
+  "potential_payment_impact": "A payment critical run may need confirmation if its deadline is missed.",
+  "customer_action": "Confirm whether new submissions or historic resubmissions are subject to an active instruction from the authorised owner.",
+  "uncertainty": "The sample contains no real customer identifiers, private queue data or internal service objectives.",
+  "next_owner": "Service owner with Settlement operations and relevant service provider input.",
+  "next_update": "Agree a next update time with the incident lead before communicating externally."
+}

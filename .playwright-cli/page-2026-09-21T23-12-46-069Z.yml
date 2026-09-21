@@ -1,0 +1,236 @@
+- generic [ref=f1e2]:
+  - complementary [ref=f1e3]:
+    - generic [ref=f1e4]: SI
+    - generic [ref=f1e5]:
+      - generic [ref=f1e6]: Service monitor
+      - generic [ref=f1e7]: SYNTHETIC CASE
+    - navigation "Dashboard sections" [ref=f1e9]:
+      - button "Overview" [ref=f1e10] [cursor=pointer]
+      - button "Drivers & forecast" [ref=f1e11] [cursor=pointer]
+      - button "Scenario lab" [ref=f1e12] [cursor=pointer]
+      - button "Hypothesis tests" [ref=f1e13] [cursor=pointer]
+      - button "Customer impact" [ref=f1e14] [cursor=pointer]
+      - button "Improvement register" [ref=f1e15] [cursor=pointer]
+      - button "Analyst approach" [ref=f1e16] [cursor=pointer]
+      - button "Service note" [ref=f1e17] [cursor=pointer]
+      - button "Evidence & limits" [ref=f1e18] [cursor=pointer]
+    - generic [ref=f1e22]:
+      - strong [ref=f1e23]: Public case
+      - generic [ref=f1e24]: 14 Sep 2026 circular
+    - generic [ref=f1e25]: LOCAL DEMONO LIVE SYSTEM CONNECTION
+  - main [ref=f1e26]:
+    - generic [ref=f1e27]:
+      - generic [ref=f1e28]: SERVICE MONITOR / SETTLEMENT & INSIGHT
+      - generic [ref=f1e29]:
+        - generic [ref=f1e30]: SYNTHETIC DATA
+        - generic [ref=f1e32]: RS
+    - generic [ref=f1e33]:
+      - strong [ref=f1e34]: DEMONSTRATION ONLY
+      - generic [ref=f1e35]: Every participant, metric, threshold and service run shown here is generated. No Elexon operational data is used.
+    - generic [ref=f1e37]:
+      - generic [ref=f1e38]:
+        - generic [ref=f1e39]:
+          - generic [ref=f1e40]: CURRENT SERVICE STATE
+          - heading "Is the demo queue under pressure?" [level=1] [ref=f1e41]
+          - paragraph [ref=f1e42]: Use arrivals, processing, queue and run context to decide what to investigate next.
+        - generic [ref=f1e45]:
+          - strong [ref=f1e46]: 14 day sample
+          - generic [ref=f1e47]: Fixed seed synthetic data
+      - generic [ref=f1e48]:
+        - generic [ref=f1e49]: i
+        - generic [ref=f1e50]:
+          - strong [ref=f1e51]: What the public circular says
+          - paragraph [ref=f1e52]: On 14 September 2026, Elexon reported DCP capacity pressure linked to MSID/AMSID submission volumes above submitted forecasts, with downstream Settlement and payment runs delayed. The circular does not publish a lower-level technical cause.
+        - link "EL04799 ↗" [ref=f1e53] [cursor=pointer]:
+          - /url: https://elexonexternal.newsweaver.com/924j6pkkru/1gsurqf0ylu
+      - generic [ref=f1e54]:
+        - article [ref=f1e55]:
+          - generic [ref=f1e56]:
+            - text: DEMO SERVICE STATE
+            - generic "Illustrative alert rules only" [ref=f1e57]: "?"
+          - generic [ref=f1e58]: At risk
+          - generic [ref=f1e60]: Demo thresholds, not Elexon limits
+        - article [ref=f1e61]:
+          - generic [ref=f1e62]:
+            - text: OPEN REGISTRATION QUEUE
+            - generic "Generated work received but not yet completed" [ref=f1e63]: "?"
+          - generic [ref=f1e64]: "602"
+          - generic [ref=f1e65]: +158 vs prior 24h
+        - article [ref=f1e66]:
+          - generic [ref=f1e67]:
+            - text: LATEST HOUR THROUGHPUT
+            - generic "Generated submissions completed in the latest hour" [ref=f1e68]: "?"
+          - generic [ref=f1e69]: "20"
+          - generic [ref=f1e70]: Processed submissions in latest demo hour
+        - article [ref=f1e71]:
+          - generic [ref=f1e72]:
+            - text: FORECAST VARIANCE
+            - generic "Generated actual submissions minus generated forecast, divided by forecast" [ref=f1e73]: "?"
+          - generic [ref=f1e74]: +65.7%
+          - generic [ref=f1e75]: Generated actuals vs generated forecast, 24h
+        - article [ref=f1e76]:
+          - generic [ref=f1e77]: SYNTHETIC RUNS DELAYED
+          - generic [ref=f1e78]: 1 / 2
+          - generic [ref=f1e79]: Demo Settlement/payment run records, 24h
+      - generic [ref=f1e80]:
+        - generic [ref=f1e81]:
+          - generic [ref=f1e82]: CONTROL AND DETECT
+          - heading "What is changing now?" [level=2] [ref=f1e83]
+        - generic [ref=f1e84]:
+          - generic [ref=f1e85]: Arrivals
+          - generic [ref=f1e87]: Processed
+          - generic [ref=f1e89]: Backlog
+      - generic [ref=f1e91]:
+        - article [ref=f1e92]:
+          - generic [ref=f1e93]:
+            - generic [ref=f1e94]:
+              - heading "Arrivals vs processed" [level=3] [ref=f1e95]
+              - paragraph [ref=f1e96]: Hourly registration submissions • last 7 demo days
+            - generic [ref=f1e97]: VOLUME / HOUR
+          - img "Synthetic registrations received and processed by hour" [ref=f1e99]:
+            - generic [ref=f1e100]: "0"
+            - generic [ref=f1e101]: "13"
+            - generic [ref=f1e102]: "25"
+            - generic [ref=f1e103]: "38"
+            - generic [ref=f1e104]: "50"
+            - generic "Arrivals" [ref=f1e105]
+            - generic "Processed" [ref=f1e106]
+            - generic [ref=f1e109]: D08 · 00:00
+            - generic [ref=f1e110]: D09 · 09:00
+            - generic [ref=f1e111]: D10 · 19:00
+            - generic [ref=f1e112]: D12 · 04:00
+            - generic [ref=f1e113]: D13 · 14:00
+            - generic [ref=f1e114]: D14 · 23:00
+        - article [ref=f1e115]:
+          - generic [ref=f1e116]:
+            - generic [ref=f1e117]:
+              - heading "Queue and latency" [level=3] [ref=f1e118]
+              - paragraph [ref=f1e119]: Backlog size and processing latency
+            - generic [ref=f1e120]: TREND
+          - generic [ref=f1e121]:
+            - generic [ref=f1e122]:
+              - generic [ref=f1e123]:
+                - generic [ref=f1e124]: Backlog
+                - generic [ref=f1e125]: items
+              - img "Synthetic backlog trend" [ref=f1e127]:
+                - generic [ref=f1e128]: "0"
+                - generic [ref=f1e129]: "175"
+                - generic [ref=f1e130]: "350"
+                - generic [ref=f1e131]: "525"
+                - generic [ref=f1e132]: "700"
+                - generic "Backlog" [ref=f1e133]
+                - generic [ref=f1e135]: D08 · 00:00
+                - generic [ref=f1e136]: D09 · 09:00
+                - generic [ref=f1e137]: D10 · 19:00
+                - generic [ref=f1e138]: D12 · 04:00
+                - generic [ref=f1e139]: D13 · 14:00
+                - generic [ref=f1e140]: D14 · 23:00
+            - generic [ref=f1e141]:
+              - generic [ref=f1e142]:
+                - generic [ref=f1e143]: Processing latency
+                - generic [ref=f1e144]: minutes
+              - img "Synthetic processing latency trend" [ref=f1e146]:
+                - generic [ref=f1e147]: "0"
+                - generic [ref=f1e148]: "19"
+                - generic [ref=f1e149]: "38"
+                - generic [ref=f1e150]: "56"
+                - generic [ref=f1e151]: "75"
+                - generic "Latency" [ref=f1e152]
+                - generic [ref=f1e154]: D08 · 00:00
+                - generic [ref=f1e155]: D09 · 09:00
+                - generic [ref=f1e156]: D10 · 19:00
+                - generic [ref=f1e157]: D12 · 04:00
+                - generic [ref=f1e158]: D13 · 14:00
+                - generic [ref=f1e159]: D14 · 23:00
+      - generic [ref=f1e160]:
+        - article [ref=f1e161]:
+          - generic [ref=f1e162]:
+            - generic [ref=f1e163]:
+              - heading "Scheduled service runs" [level=3] [ref=f1e164]
+              - paragraph [ref=f1e165]: Illustrative run table; not actual settlement performance
+            - generic [ref=f1e166]: 1 delayed · synthetic
+          - table [ref=f1e168]:
+            - rowgroup [ref=f1e169]:
+              - row [ref=f1e170]:
+                - columnheader "Demo time" [ref=f1e171]
+                - columnheader "Run type" [ref=f1e172]
+                - columnheader "Delay" [ref=f1e173]
+                - columnheader "Demo state" [ref=f1e174]
+            - rowgroup [ref=f1e175]:
+              - row [ref=f1e176]:
+                - cell "D14 · 13:00" [ref=f1e177]
+                - cell "payment-critical" [ref=f1e178]
+                - cell "70 min" [ref=f1e179]
+                - cell "Delayed" [ref=f1e180]
+              - row [ref=f1e181]:
+                - cell "D14 · 07:00" [ref=f1e182]
+                - cell "Settlement-critical" [ref=f1e183]
+                - cell "57 min" [ref=f1e184]
+                - cell "On time" [ref=f1e185]
+              - row [ref=f1e186]:
+                - cell "D13 · 13:00" [ref=f1e187]
+                - cell "payment-critical" [ref=f1e188]
+                - cell "46 min" [ref=f1e189]
+                - cell "Delayed" [ref=f1e190]
+              - row [ref=f1e191]:
+                - cell "D13 · 07:00" [ref=f1e192]
+                - cell "Settlement-critical" [ref=f1e193]
+                - cell "22 min" [ref=f1e194]
+                - cell "On time" [ref=f1e195]
+              - row [ref=f1e196]:
+                - cell "D12 · 13:00" [ref=f1e197]
+                - cell "payment-critical" [ref=f1e198]
+                - cell "17 min" [ref=f1e199]
+                - cell "On time" [ref=f1e200]
+              - row [ref=f1e201]:
+                - cell "D12 · 07:00" [ref=f1e202]
+                - cell "Settlement-critical" [ref=f1e203]
+                - cell "0 min" [ref=f1e204]
+                - cell "On time" [ref=f1e205]
+              - row [ref=f1e206]:
+                - cell "D11 · 13:00" [ref=f1e207]
+                - cell "payment-critical" [ref=f1e208]
+                - cell "0 min" [ref=f1e209]
+                - cell "On time" [ref=f1e210]
+              - row [ref=f1e211]:
+                - cell "D11 · 07:00" [ref=f1e212]
+                - cell "Settlement-critical" [ref=f1e213]
+                - cell "0 min" [ref=f1e214]
+                - cell "On time" [ref=f1e215]
+        - article [ref=f1e216]:
+          - generic [ref=f1e217]:
+            - generic [ref=f1e218]:
+              - heading "Validation & retries" [level=3] [ref=f1e219]
+              - paragraph [ref=f1e220]: Failure rate (teal) and retry rate (amber), by hour
+            - generic [ref=f1e221]: RATE / %
+          - img "Synthetic validation failure and retry rates by hour" [ref=f1e223]:
+            - generic [ref=f1e224]: 0.0%
+            - generic [ref=f1e225]: 6.3%
+            - generic [ref=f1e226]: 12.5%
+            - generic [ref=f1e227]: 18.8%
+            - generic [ref=f1e228]: 25.0%
+            - generic "Validation failures" [ref=f1e229]
+            - generic "Retries" [ref=f1e230]
+            - generic [ref=f1e233]: D08 · 00:00
+            - generic [ref=f1e234]: D09 · 09:00
+            - generic [ref=f1e235]: D10 · 19:00
+            - generic [ref=f1e236]: D12 · 04:00
+            - generic [ref=f1e237]: D13 · 14:00
+            - generic [ref=f1e238]: D14 · 23:00
+        - article [ref=f1e239]:
+          - generic [ref=f1e240]: ANALYST VIEW
+          - heading "What the measures mean" [level=3] [ref=f1e241]
+          - paragraph [ref=f1e242]: Arrivals show incoming work. Throughput shows completed work. Queue growth shows whether demand is outpacing processing. Latency and scheduled run status add service impact context.
+          - button "Open workload investigation →" [ref=f1e243] [cursor=pointer]
+      - generic [ref=f1e244]:
+        - generic [ref=f1e245]: ↗
+        - paragraph [ref=f1e246]:
+          - strong [ref=f1e247]: Descriptive
+          - text: what changed •
+          - strong [ref=f1e248]: Predictive
+          - text: a conditional queue projection •
+          - strong [ref=f1e249]: Prescriptive
+          - text: options to assess with service owners.
+    - generic [ref=f1e250]:
+      - generic [ref=f1e251]: Settlement Service Intelligence · Candidate demonstration
+      - generic [ref=f1e252]: Built from public context + generated sample data

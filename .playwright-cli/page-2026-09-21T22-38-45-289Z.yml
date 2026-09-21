@@ -1,0 +1,100 @@
+- generic [ref=e2]:
+  - complementary [ref=e3]:
+    - generic [ref=e4]: SI
+    - generic [ref=e5]:
+      - generic [ref=e6]: Service intelligence
+      - generic [ref=e7]: INTERVIEW CASE STUDY
+    - navigation "Dashboard sections" [ref=e9]:
+      - button "◫ Overview" [ref=e10] [cursor=pointer]:
+        - generic [ref=e11]: ◫
+        - text: Overview
+      - button "⌕ Drivers & forecast" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: ⌕
+        - text: Drivers & forecast
+      - button "⤴ Scenario lab" [ref=e14] [cursor=pointer]:
+        - generic [ref=e15]: ⤴
+        - text: Scenario lab
+      - button "? Hypothesis tests" [ref=e16] [cursor=pointer]:
+        - generic [ref=e17]: "?"
+        - text: Hypothesis tests
+      - button "◎ Customer impact" [active] [ref=e18] [cursor=pointer]:
+        - generic [ref=e19]: ◎
+        - text: Customer impact
+      - button "↻ Improvement register" [ref=e20] [cursor=pointer]:
+        - generic [ref=e21]: ↻
+        - text: Improvement register
+      - button "◇ Analyst approach" [ref=e22] [cursor=pointer]:
+        - generic [ref=e23]: ◇
+        - text: Analyst approach
+      - button "▤ Service note" [ref=e24] [cursor=pointer]:
+        - generic [ref=e25]: ▤
+        - text: Service note
+      - button "✓ Evidence & limits" [ref=e26] [cursor=pointer]:
+        - generic [ref=e27]: ✓
+        - text: Evidence & limits
+    - generic [ref=e31]:
+      - strong [ref=e32]: Public case
+      - generic [ref=e33]: 14 Sep 2026 circular
+    - generic [ref=e34]: LOCAL DEMONO LIVE SYSTEM CONNECTION
+  - main [ref=e35]:
+    - generic [ref=e36]:
+      - generic [ref=e37]: SETTLEMENT & INSIGHT / SERVICE MONITOR
+      - generic [ref=e38]:
+        - generic [ref=e39]: SYNTHETIC DATA
+        - generic [ref=e41]: RS
+    - generic [ref=e42]:
+      - strong [ref=e43]: DEMONSTRATION ONLY
+      - generic [ref=e44]: Every participant, metric, threshold and service run shown here is generated. No Elexon operational data is used.
+    - generic [ref=e719]:
+      - generic [ref=e721]:
+        - generic [ref=e722]: CUSTOMER FIRST
+        - heading "Customer and Settlement impact" [level=1] [ref=e723]
+        - paragraph [ref=e724]: Translate service signals into the questions an operational owner must answer.
+      - generic [ref=e725]:
+        - article [ref=e726]:
+          - generic [ref=e727]: Current demo state
+          - paragraph [ref=e728]: At risk
+        - article [ref=e729]:
+          - generic [ref=e730]: Who may be affected
+          - paragraph [ref=e731]: Participants submitting registration data and teams relying on scheduled Settlement or payment activity.
+        - article [ref=e732]:
+          - generic [ref=e733]: Settlement impact
+          - paragraph [ref=e734]: A delayed supporting service may delay a downstream run. The sample does not quantify a real impact.
+        - article [ref=e735]:
+          - generic [ref=e736]: Payment impact
+          - paragraph [ref=e737]: A payment critical run may need confirmation if its deadline is missed.
+        - article [ref=e738]:
+          - generic [ref=e739]: Customer action
+          - paragraph [ref=e740]: Confirm whether new submissions or historic resubmissions are subject to an active instruction from the authorised owner.
+        - article [ref=e741]:
+          - generic [ref=e742]: What remains uncertain
+          - paragraph [ref=e743]: The sample contains no real customer identifiers, private queue data or internal service objectives.
+        - article [ref=e744]:
+          - generic [ref=e745]: Next owner
+          - paragraph [ref=e746]: Service owner with Settlement operations and relevant service provider input.
+        - article [ref=e747]:
+          - generic [ref=e748]: Next update
+          - paragraph [ref=e749]: Agree a next update time with the incident lead before communicating externally.
+      - article [ref=e750]:
+        - generic [ref=e751]: SERVICE PROVIDER QUESTIONS
+        - heading "Evidence to request" [level=2] [ref=e752]
+        - generic [ref=e753]:
+          - generic [ref=e754]:
+            - generic [ref=e755]: "01"
+            - strong [ref=e756]: Throughput
+            - paragraph [ref=e757]: What was received, completed and still open in each interval?
+          - generic [ref=e758]:
+            - generic [ref=e759]: "02"
+            - strong [ref=e760]: Quality
+            - paragraph [ref=e761]: Which failures and retries added work or delayed completion?
+          - generic [ref=e762]:
+            - generic [ref=e763]: "03"
+            - strong [ref=e764]: Dependencies
+            - paragraph [ref=e765]: Were any releases, interfaces or upstream services changing?
+          - generic [ref=e766]:
+            - generic [ref=e767]: "04"
+            - strong [ref=e768]: Recovery
+            - paragraph [ref=e769]: What is the expected recovery point and how is it measured?
+    - generic [ref=e145]:
+      - generic [ref=e146]: Settlement Service Intelligence · Candidate demonstration
+      - generic [ref=e147]: Built from public context + generated sample data

@@ -1,0 +1,9 @@
+[     189ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:4173/api/timeseries?hours=168:0
+[     190ms] [ERROR] Error: Request failed: /api/timeseries?hours=168
+    at getJson (http://127.0.0.1:4173/dashboard.js:46:27)
+    at async Promise.all (index 1)
+    at async loadDashboard (http://127.0.0.1:4173/dashboard.js:204:50) @ http://127.0.0.1:4173/dashboard.js:218
+[     192ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:4173/api/overview:0
+[     192ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:4173/api/runs?hours=168:0
+[     192ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:4173/api/validation:0
+[     194ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://127.0.0.1:4173/favicon.ico:0

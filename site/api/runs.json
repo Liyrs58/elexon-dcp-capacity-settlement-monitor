@@ -1,0 +1,156 @@
+[
+  {
+    "timestamp": "2026-01-08T07:00",
+    "service_run_type": "Settlement-critical",
+    "scheduled_at": "2026-01-08T07:00",
+    "delay_minutes": 0,
+    "deadline_minutes": 60,
+    "status": "On time",
+    "downstream_settlement_risk_flag": 0,
+    "demo_queue_at_schedule": 0,
+    "t": "2026-01-07 13:00:00"
+  },
+  {
+    "timestamp": "2026-01-08T13:00",
+    "service_run_type": "payment-critical",
+    "scheduled_at": "2026-01-08T13:00",
+    "delay_minutes": 0,
+    "deadline_minutes": 45,
+    "status": "On time",
+    "downstream_settlement_risk_flag": 0,
+    "demo_queue_at_schedule": 4,
+    "t": "2026-01-07 13:00:00"
+  },
+  {
+    "timestamp": "2026-01-09T07:00",
+    "service_run_type": "Settlement-critical",
+    "scheduled_at": "2026-01-09T07:00",
+    "delay_minutes": 0,
+    "deadline_minutes": 60,
+    "status": "On time",
+    "downstream_settlement_risk_flag": 0,
+    "demo_queue_at_schedule": 0,
+    "t": "2026-01-07 13:00:00"
+  },
+  {
+    "timestamp": "2026-01-09T13:00",
+    "service_run_type": "payment-critical",
+    "scheduled_at": "2026-01-09T13:00",
+    "delay_minutes": 0,
+    "deadline_minutes": 45,
+    "status": "On time",
+    "downstream_settlement_risk_flag": 0,
+    "demo_queue_at_schedule": 44,
+    "t": "2026-01-07 13:00:00"
+  },
+  {
+    "timestamp": "2026-01-10T07:00",
+    "service_run_type": "Settlement-critical",
+    "scheduled_at": "2026-01-10T07:00",
+    "delay_minutes": 0,
+    "deadline_minutes": 60,
+    "status": "On time",
+    "downstream_settlement_risk_flag": 0,
+    "demo_queue_at_schedule": 16,
+    "t": "2026-01-07 13:00:00"
+  },
+  {
+    "timestamp": "2026-01-10T13:00",
+    "service_run_type": "payment-critical",
+    "scheduled_at": "2026-01-10T13:00",
+    "delay_minutes": 0,
+    "deadline_minutes": 45,
+    "status": "On time",
+    "downstream_settlement_risk_flag": 0,
+    "demo_queue_at_schedule": 64,
+    "t": "2026-01-07 13:00:00"
+  },
+  {
+    "timestamp": "2026-01-11T07:00",
+    "service_run_type": "Settlement-critical",
+    "scheduled_at": "2026-01-11T07:00",
+    "delay_minutes": 0,
+    "deadline_minutes": 60,
+    "status": "On time",
+    "downstream_settlement_risk_flag": 0,
+    "demo_queue_at_schedule": 35,
+    "t": "2026-01-07 13:00:00"
+  },
+  {
+    "timestamp": "2026-01-11T13:00",
+    "service_run_type": "payment-critical",
+    "scheduled_at": "2026-01-11T13:00",
+    "delay_minutes": 0,
+    "deadline_minutes": 45,
+    "status": "On time",
+    "downstream_settlement_risk_flag": 0,
+    "demo_queue_at_schedule": 89,
+    "t": "2026-01-07 13:00:00"
+  },
+  {
+    "timestamp": "2026-01-12T07:00",
+    "service_run_type": "Settlement-critical",
+    "scheduled_at": "2026-01-12T07:00",
+    "delay_minutes": 0,
+    "deadline_minutes": 60,
+    "status": "On time",
+    "downstream_settlement_risk_flag": 0,
+    "demo_queue_at_schedule": 94,
+    "t": "2026-01-07 13:00:00"
+  },
+  {
+    "timestamp": "2026-01-12T13:00",
+    "service_run_type": "payment-critical",
+    "scheduled_at": "2026-01-12T13:00",
+    "delay_minutes": 17,
+    "deadline_minutes": 45,
+    "status": "On time",
+    "downstream_settlement_risk_flag": 0,
+    "demo_queue_at_schedule": 206,
+    "t": "2026-01-07 13:00:00"
+  },
+  {
+    "timestamp": "2026-01-13T07:00",
+    "service_run_type": "Settlement-critical",
+    "scheduled_at": "2026-01-13T07:00",
+    "delay_minutes": 22,
+    "deadline_minutes": 60,
+    "status": "On time",
+    "downstream_settlement_risk_flag": 0,
+    "demo_queue_at_schedule": 250,
+    "t": "2026-01-07 13:00:00"
+  },
+  {
+    "timestamp": "2026-01-13T13:00",
+    "service_run_type": "payment-critical",
+    "scheduled_at": "2026-01-13T13:00",
+    "delay_minutes": 46,
+    "deadline_minutes": 45,
+    "status": "Delayed",
+    "downstream_settlement_risk_flag": 1,
+    "demo_queue_at_schedule": 348,
+    "t": "2026-01-07 13:00:00"
+  },
+  {
+    "timestamp": "2026-01-14T07:00",
+    "service_run_type": "Settlement-critical",
+    "scheduled_at": "2026-01-14T07:00",
+    "delay_minutes": 57,
+    "deadline_minutes": 60,
+    "status": "On time",
+    "downstream_settlement_risk_flag": 0,
+    "demo_queue_at_schedule": 417,
+    "t": "2026-01-07 13:00:00"
+  },
+  {
+    "timestamp": "2026-01-14T13:00",
+    "service_run_type": "payment-critical",
+    "scheduled_at": "2026-01-14T13:00",
+    "delay_minutes": 70,
+    "deadline_minutes": 45,
+    "status": "Delayed",
+    "downstream_settlement_risk_flag": 1,
+    "demo_queue_at_schedule": 524,
+    "t": "2026-01-07 13:00:00"
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "elevated_backlog": 180,
+  "at_risk_backlog": 550,
+  "critical_backlog": 900,
+  "elevated_latency_minutes": 35,
+  "at_risk_latency_minutes": 75,
+  "critical_latency_minutes": 120,
+  "elevated_forecast_variance": 0.2
+}

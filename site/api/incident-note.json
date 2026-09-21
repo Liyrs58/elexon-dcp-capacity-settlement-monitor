@@ -1,0 +1,4 @@
+{
+  "label": "DEMO TEMPLATE \u2022 SYNTHETIC ONLY",
+  "note": "SYNTHETIC DEMONSTRATION \u2014 not an Elexon incident update.\n\nState: At risk. Generated registration backlog is 602; the prior-24-hour backlog change is +158. Generated average processing latency is 52.5 minutes. Generated submissions are +66% against the sample forecast. The demo run table marks 1 of 2 synthetic scheduled runs as delayed.\n\nInvestigation lead: The largest positive forecast deviation in this generated sample is SYN-VLP-01 / new MSID Pair (+237 submissions).\n\nNext checks before communicating operationally: confirm metric definitions and data freshness; compare arrivals, completed work and backlog by workload; validate any affected run schedule with service owners; check participant/customer impact; agree the next update time with the incident lead. This sample contains no customer or Elexon operational data."
+}

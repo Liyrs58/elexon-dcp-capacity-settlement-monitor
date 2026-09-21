@@ -1,0 +1,135 @@
+- generic [ref=e2]:
+  - complementary [ref=e3]:
+    - generic [ref=e4]: SI
+    - generic [ref=e5]:
+      - generic [ref=e6]: Service monitor
+      - generic [ref=e7]: SYNTHETIC CASE
+    - navigation "Dashboard sections" [ref=e9]:
+      - button "Overview" [ref=e10] [cursor=pointer]
+      - button "Drivers & forecast" [ref=e11] [cursor=pointer]
+      - button "Scenario lab" [ref=e12] [cursor=pointer]
+      - button "Hypothesis tests" [ref=e13] [cursor=pointer]
+      - button "Customer impact" [ref=e14] [cursor=pointer]
+      - button "Improvement register" [ref=e15] [cursor=pointer]
+      - button "Analyst approach" [ref=e16] [cursor=pointer]
+      - button "Service note" [ref=e17] [cursor=pointer]
+      - button "Evidence & limits" [ref=e18] [cursor=pointer]
+    - generic [ref=e22]:
+      - strong [ref=e23]: Public case
+      - generic [ref=e24]: 14 Sep 2026 circular
+    - generic [ref=e25]: LOCAL DEMONO LIVE SYSTEM CONNECTION
+  - main [ref=e26]:
+    - generic [ref=e27]:
+      - generic [ref=e28]: SERVICE MONITOR / SETTLEMENT & INSIGHT
+      - generic [ref=e29]:
+        - generic [ref=e30]: SYNTHETIC DATA
+        - generic [ref=e32]: RS
+    - generic [ref=e33]:
+      - strong [ref=e34]: DEMONSTRATION ONLY
+      - generic [ref=e35]: Every participant, metric, threshold and service run shown here is generated. No Elexon operational data is used.
+    - generic [ref=e36]:
+      - generic [ref=e37]: The local demo could not load its generated data. Restart it from the project folder.
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - generic [ref=e40]:
+            - generic [ref=e41]: CURRENT SERVICE STATE
+            - heading "Is the demo queue under pressure?" [level=1] [ref=e42]
+            - paragraph [ref=e43]: Use arrivals, processing, queue and run context to decide what to investigate next.
+          - generic [ref=e46]:
+            - strong [ref=e47]: 14 day sample
+            - generic [ref=e48]: Fixed seed synthetic data
+        - generic [ref=e49]:
+          - generic [ref=e50]: i
+          - generic [ref=e51]:
+            - strong [ref=e52]: What the public circular says
+            - paragraph [ref=e53]: On 14 September 2026, Elexon reported DCP capacity pressure linked to MSID/AMSID submission volumes above submitted forecasts, with downstream Settlement and payment runs delayed. The circular does not publish a lower-level technical cause.
+          - link "EL04799 ↗" [ref=e54] [cursor=pointer]:
+            - /url: https://elexonexternal.newsweaver.com/924j6pkkru/1gsurqf0ylu
+        - generic [ref=e55]:
+          - article [ref=e56]:
+            - generic [ref=e57]:
+              - text: DEMO SERVICE STATE
+              - generic "Illustrative alert rules only" [ref=e58]: "?"
+            - generic [ref=e59]: Loading
+            - generic [ref=e61]: Demo thresholds, not Elexon limits
+          - article [ref=e62]:
+            - generic [ref=e63]:
+              - text: OPEN REGISTRATION QUEUE
+              - generic "Generated work received but not yet completed" [ref=e64]: "?"
+            - generic [ref=e65]: —
+            - generic [ref=e66]: — vs prior 24h
+          - article [ref=e67]:
+            - generic [ref=e68]:
+              - text: LATEST HOUR THROUGHPUT
+              - generic "Generated submissions completed in the latest hour" [ref=e69]: "?"
+            - generic [ref=e70]: —
+            - generic [ref=e71]: Processed submissions in latest demo hour
+          - article [ref=e72]:
+            - generic [ref=e73]:
+              - text: FORECAST VARIANCE
+              - generic "Generated actual submissions minus generated forecast, divided by forecast" [ref=e74]: "?"
+            - generic [ref=e75]: —
+            - generic [ref=e76]: Generated actuals vs generated forecast, 24h
+          - article [ref=e77]:
+            - generic [ref=e78]: SYNTHETIC RUNS DELAYED
+            - generic [ref=e79]: —
+            - generic [ref=e80]: Demo Settlement/payment run records, 24h
+        - generic [ref=e81]:
+          - generic [ref=e82]:
+            - generic [ref=e83]: CONTROL AND DETECT
+            - heading "What is changing now?" [level=2] [ref=e84]
+          - generic [ref=e85]:
+            - generic [ref=e86]: Arrivals
+            - generic [ref=e88]: Processed
+            - generic [ref=e90]: Backlog
+        - generic [ref=e92]:
+          - article [ref=e93]:
+            - generic [ref=e94]:
+              - generic [ref=e95]:
+                - heading "Arrivals vs processed" [level=3] [ref=e96]
+                - paragraph [ref=e97]: Hourly registration submissions • last 7 demo days
+              - generic [ref=e98]: VOLUME / HOUR
+          - article [ref=e100]:
+            - generic [ref=e101]:
+              - generic [ref=e102]:
+                - heading "Queue and latency" [level=3] [ref=e103]
+                - paragraph [ref=e104]: Backlog size and processing latency
+              - generic [ref=e105]: TREND
+        - generic [ref=e107]:
+          - article [ref=e108]:
+            - generic [ref=e109]:
+              - generic [ref=e110]:
+                - heading "Scheduled service runs" [level=3] [ref=e111]
+                - paragraph [ref=e112]: Illustrative run table; not actual settlement performance
+              - generic [ref=e113]: —
+            - table [ref=e115]:
+              - rowgroup [ref=e116]:
+                - row [ref=e117]:
+                  - columnheader "Demo time" [ref=e118]
+                  - columnheader "Run type" [ref=e119]
+                  - columnheader "Delay" [ref=e120]
+                  - columnheader "Demo state" [ref=e121]
+              - rowgroup
+          - article [ref=e122]:
+            - generic [ref=e123]:
+              - generic [ref=e124]:
+                - heading "Validation & retries" [level=3] [ref=e125]
+                - paragraph [ref=e126]: Failure rate (teal) and retry rate (amber), by hour
+              - generic [ref=e127]: RATE / %
+          - article [ref=e129]:
+            - generic [ref=e130]: ANALYST VIEW
+            - heading "What the measures mean" [level=3] [ref=e131]
+            - paragraph [ref=e132]: Arrivals show incoming work. Throughput shows completed work. Queue growth shows whether demand is outpacing processing. Latency and scheduled run status add service impact context.
+            - button "Open workload investigation →" [ref=e133] [cursor=pointer]
+        - generic [ref=e134]:
+          - generic [ref=e135]: ↗
+          - paragraph [ref=e136]:
+            - strong [ref=e137]: Descriptive
+            - text: what changed •
+            - strong [ref=e138]: Predictive
+            - text: a conditional queue projection •
+            - strong [ref=e139]: Prescriptive
+            - text: options to assess with service owners.
+    - generic [ref=e140]:
+      - generic [ref=e141]: Settlement Service Intelligence · Candidate demonstration
+      - generic [ref=e142]: Built from public context + generated sample data

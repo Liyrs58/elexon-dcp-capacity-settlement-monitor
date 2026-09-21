@@ -1,0 +1,145 @@
+- generic [ref=e2]:
+  - complementary [ref=e3]:
+    - generic [ref=e4]: SI
+    - generic [ref=e5]:
+      - generic [ref=e6]: Service intelligence
+      - generic [ref=e7]: INTERVIEW CASE STUDY
+    - navigation "Dashboard sections" [ref=e9]:
+      - button "◫ Overview" [ref=e10] [cursor=pointer]:
+        - generic [ref=e11]: ◫
+        - text: Overview
+      - button "⌕ Drivers & forecast" [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: ⌕
+        - text: Drivers & forecast
+      - button "⤴ Scenario lab" [ref=e14] [cursor=pointer]:
+        - generic [ref=e15]: ⤴
+        - text: Scenario lab
+      - button "? Hypothesis tests" [ref=e16] [cursor=pointer]:
+        - generic [ref=e17]: "?"
+        - text: Hypothesis tests
+      - button "◎ Customer impact" [ref=e18] [cursor=pointer]:
+        - generic [ref=e19]: ◎
+        - text: Customer impact
+      - button "↻ Improvement register" [ref=e20] [cursor=pointer]:
+        - generic [ref=e21]: ↻
+        - text: Improvement register
+      - button "◇ Analyst approach" [ref=e22] [cursor=pointer]:
+        - generic [ref=e23]: ◇
+        - text: Analyst approach
+      - button "▤ Service note" [ref=e24] [cursor=pointer]:
+        - generic [ref=e25]: ▤
+        - text: Service note
+      - button "✓ Evidence & limits" [ref=e26] [cursor=pointer]:
+        - generic [ref=e27]: ✓
+        - text: Evidence & limits
+    - generic [ref=e31]:
+      - strong [ref=e32]: Public case
+      - generic [ref=e33]: 14 Sep 2026 circular
+    - generic [ref=e34]: LOCAL DEMONO LIVE SYSTEM CONNECTION
+  - main [ref=e35]:
+    - generic [ref=e36]:
+      - generic [ref=e37]: SETTLEMENT & INSIGHT / SERVICE MONITOR
+      - generic [ref=e38]:
+        - generic [ref=e39]: SYNTHETIC DATA
+        - generic [ref=e41]: RS
+    - generic [ref=e42]:
+      - strong [ref=e43]: DEMONSTRATION ONLY
+      - generic [ref=e44]: Every participant, metric, threshold and service run shown here is generated. No Elexon operational data is used.
+    - generic [ref=e46]:
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - generic [ref=e49]: OPERATIONAL ANALYTICS • CASE STUDY
+          - heading "Settlement service monitor" [level=1] [ref=e50]
+          - paragraph [ref=e51]: Turn workload signals into an early, explainable service-risk picture.
+        - generic [ref=e54]:
+          - strong [ref=e55]: 14-day demo window
+          - generic [ref=e56]: Fixed-seed sample • generated on first run
+      - generic [ref=e57]:
+        - generic [ref=e58]: i
+        - generic [ref=e59]:
+          - strong [ref=e60]: What the public circular says
+          - paragraph [ref=e61]: On 14 September 2026, Elexon reported DCP capacity pressure linked to MSID/AMSID submission volumes above submitted forecasts, with downstream Settlement and payment runs delayed. The circular does not publish a lower-level technical cause.
+        - link "EL04799 ↗" [ref=e62] [cursor=pointer]:
+          - /url: https://elexonexternal.newsweaver.com/924j6pkkru/1gsurqf0ylu
+      - generic [ref=e63]:
+        - article [ref=e64]:
+          - generic [ref=e65]:
+            - text: DEMO SERVICE STATE
+            - generic "Illustrative alert rules only" [ref=e66]: "?"
+          - generic [ref=e67]: Loading
+          - generic [ref=e69]: Demo thresholds, not Elexon limits
+        - article [ref=e70]:
+          - generic [ref=e71]: OPEN REGISTRATION QUEUE
+          - generic [ref=e72]: —
+          - generic [ref=e73]: — vs prior 24h
+        - article [ref=e74]:
+          - generic [ref=e75]: LATEST HOUR THROUGHPUT
+          - generic [ref=e76]: —
+          - generic [ref=e77]: Processed submissions in latest demo hour
+        - article [ref=e78]:
+          - generic [ref=e79]: FORECAST VARIANCE
+          - generic [ref=e80]: —
+          - generic [ref=e81]: Generated actuals vs generated forecast, 24h
+        - article [ref=e82]:
+          - generic [ref=e83]: SYNTHETIC RUNS DELAYED
+          - generic [ref=e84]: —
+          - generic [ref=e85]: Demo Settlement/payment run records, 24h
+      - generic [ref=e86]:
+        - generic [ref=e87]:
+          - generic [ref=e88]: CONTROL & DETECT
+          - heading "Pressure signals" [level=2] [ref=e89]
+        - generic [ref=e90]:
+          - generic [ref=e91]: Arrivals
+          - generic [ref=e93]: Processed
+          - generic [ref=e95]: Backlog
+      - generic [ref=e97]:
+        - article [ref=e98]:
+          - generic [ref=e99]:
+            - generic [ref=e100]:
+              - heading "Arrivals vs processed" [level=3] [ref=e101]
+              - paragraph [ref=e102]: Hourly registration submissions • last 7 demo days
+            - generic [ref=e103]: VOLUME / HOUR
+        - article [ref=e105]:
+          - generic [ref=e106]:
+            - generic [ref=e107]:
+              - heading "Queue and latency" [level=3] [ref=e108]
+              - paragraph [ref=e109]: Backlog size and processing latency
+            - generic [ref=e110]: TREND
+      - generic [ref=e112]:
+        - article [ref=e113]:
+          - generic [ref=e114]:
+            - generic [ref=e115]:
+              - heading "Scheduled service runs" [level=3] [ref=e116]
+              - paragraph [ref=e117]: Illustrative run table; not actual settlement performance
+            - generic [ref=e118]: —
+          - table [ref=e120]:
+            - rowgroup [ref=e121]:
+              - row [ref=e122]:
+                - columnheader "Demo time" [ref=e123]
+                - columnheader "Run type" [ref=e124]
+                - columnheader "Delay" [ref=e125]
+                - columnheader "Demo state" [ref=e126]
+            - rowgroup
+        - article [ref=e127]:
+          - generic [ref=e128]:
+            - generic [ref=e129]:
+              - heading "Validation & retries" [level=3] [ref=e130]
+              - paragraph [ref=e131]: Failure rate (teal) and retry rate (amber), by hour
+            - generic [ref=e132]: RATE / %
+        - article [ref=e134]:
+          - generic [ref=e135]: ANALYST VIEW
+          - heading "Read the signals together" [level=3] [ref=e136]
+          - paragraph [ref=e137]: Arrival rate shows incoming pressure. Throughput shows completed work. Queue growth shows whether demand is outpacing processing. Latency and scheduled-run status add service-impact context.
+          - button "See workload drivers →" [ref=e138] [cursor=pointer]
+      - generic [ref=e139]:
+        - generic [ref=e140]: ↗
+        - paragraph [ref=e141]:
+          - strong [ref=e142]: Descriptive
+          - text: what changed •
+          - strong [ref=e143]: Predictive
+          - text: a conditional queue projection •
+          - strong [ref=e144]: Prescriptive
+          - text: options to assess with service owners.
+    - generic [ref=e145]:
+      - generic [ref=e146]: Settlement Service Intelligence · Candidate demonstration
+      - generic [ref=e147]: Built from public context + generated sample data

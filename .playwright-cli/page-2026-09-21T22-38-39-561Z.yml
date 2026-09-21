@@ -1,0 +1,291 @@
+- generic [ref=e2]:
+  - complementary [ref=e3]:
+    - generic [ref=e4]: SI
+    - generic [ref=e5]:
+      - generic [ref=e6]: Service intelligence
+      - generic [ref=e7]: INTERVIEW CASE STUDY
+    - navigation "Dashboard sections" [ref=e9]:
+      - button "◫ Overview" [ref=e10] [cursor=pointer]:
+        - generic [ref=e11]: ◫
+        - text: Overview
+      - button "⌕ Drivers & forecast" [active] [ref=e12] [cursor=pointer]:
+        - generic [ref=e13]: ⌕
+        - text: Drivers & forecast
+      - button "⤴ Scenario lab" [ref=e14] [cursor=pointer]:
+        - generic [ref=e15]: ⤴
+        - text: Scenario lab
+      - button "? Hypothesis tests" [ref=e16] [cursor=pointer]:
+        - generic [ref=e17]: "?"
+        - text: Hypothesis tests
+      - button "◎ Customer impact" [ref=e18] [cursor=pointer]:
+        - generic [ref=e19]: ◎
+        - text: Customer impact
+      - button "↻ Improvement register" [ref=e20] [cursor=pointer]:
+        - generic [ref=e21]: ↻
+        - text: Improvement register
+      - button "◇ Analyst approach" [ref=e22] [cursor=pointer]:
+        - generic [ref=e23]: ◇
+        - text: Analyst approach
+      - button "▤ Service note" [ref=e24] [cursor=pointer]:
+        - generic [ref=e25]: ▤
+        - text: Service note
+      - button "✓ Evidence & limits" [ref=e26] [cursor=pointer]:
+        - generic [ref=e27]: ✓
+        - text: Evidence & limits
+    - generic [ref=e31]:
+      - strong [ref=e32]: Public case
+      - generic [ref=e33]: 14 Sep 2026 circular
+    - generic [ref=e34]: LOCAL DEMONO LIVE SYSTEM CONNECTION
+  - main [ref=e35]:
+    - generic [ref=e36]:
+      - generic [ref=e37]: SETTLEMENT & INSIGHT / SERVICE MONITOR
+      - generic [ref=e38]:
+        - generic [ref=e39]: SYNTHETIC DATA
+        - generic [ref=e41]: RS
+    - generic [ref=e42]:
+      - strong [ref=e43]: DEMONSTRATION ONLY
+      - generic [ref=e44]: Every participant, metric, threshold and service run shown here is generated. No Elexon operational data is used.
+    - generic [ref=e345]:
+      - generic [ref=e346]:
+        - generic [ref=e347]:
+          - generic [ref=e348]: INVESTIGATE
+          - heading "Workload drivers & forecast" [level=1] [ref=e349]
+          - paragraph [ref=e350]: Find which synthetic segments contribute most to volume and forecast variance.
+        - generic [ref=e351]: GENERATED SAMPLE
+      - generic [ref=e353]:
+        - article [ref=e354]:
+          - generic [ref=e355]:
+            - generic [ref=e356]:
+              - heading "Forecast variance by segment" [level=3] [ref=e357]
+              - paragraph [ref=e358]: Largest positive deviations in the full 14-day demo window
+            - generic [ref=e359]: ACTUAL − FORECAST
+          - generic [ref=e360]:
+            - generic [ref=e361]:
+              - generic "SYN-VLP-01 · new MSID Pair" [ref=e362]
+              - generic [ref=e365]: "+216"
+            - generic [ref=e366]:
+              - generic "SYN-AMVLP-01 · new AMSID Pair" [ref=e367]
+              - generic [ref=e370]: "+183"
+            - generic [ref=e371]:
+              - generic "SYN-VTP-01 · new AMSID Pair" [ref=e372]
+              - generic [ref=e375]: "+106"
+            - generic [ref=e376]:
+              - generic "SYN-VLP-02 · new MSID Pair" [ref=e377]
+              - generic [ref=e380]: "+101"
+            - generic [ref=e381]:
+              - generic "SYN-VTP-02 · new AMSID Pair" [ref=e382]
+              - generic [ref=e385]: "+84"
+            - generic [ref=e386]:
+              - generic "SYN-SUP-01 · historic resubmission" [ref=e387]
+              - generic [ref=e390]: "+71"
+            - generic [ref=e391]:
+              - generic "SYN-AMVLP-01 · historic resubmission" [ref=e392]
+              - generic [ref=e395]: "+66"
+            - generic [ref=e396]:
+              - generic "SYN-VTP-02 · new MSID Pair" [ref=e397]
+              - generic [ref=e400]: "+58"
+        - article [ref=e401]:
+          - generic [ref=e403]:
+            - heading "Questions before acting" [level=3] [ref=e404]
+            - paragraph [ref=e405]: Keep the investigation evidence-led
+          - list [ref=e406]:
+            - listitem [ref=e407]:
+              - generic [ref=e408]: "01"
+              - text: Is the increase broad-based or concentrated by participant/workload?
+            - listitem [ref=e409]:
+              - generic [ref=e410]: "02"
+              - text: Does throughput fall behind arrivals, or is the queue recovering?
+            - listitem [ref=e411]:
+              - generic [ref=e412]: "03"
+              - text: Are retries and validation failures adding avoidable work?
+            - listitem [ref=e413]:
+              - generic [ref=e414]: "04"
+              - text: Which downstream deadlines are actually at risk?
+      - article [ref=e415]:
+        - generic [ref=e416]:
+          - generic [ref=e417]:
+            - heading "Segment investigation" [level=3] [ref=e418]
+            - paragraph [ref=e419]: Sorted by positive actual-minus-forecast volume • synthetic participants only
+          - combobox "Driver window" [ref=e420]:
+            - option "Last 7 days" [selected]
+            - option "Full 14 days"
+        - table [ref=e422]:
+          - rowgroup [ref=e423]:
+            - row [ref=e424]:
+              - columnheader "Participant" [ref=e425]
+              - columnheader "Type" [ref=e426]
+              - columnheader "Workload" [ref=e427]
+              - columnheader "Actual" [ref=e428]
+              - columnheader "Forecast" [ref=e429]
+              - columnheader "Variance" [ref=e430]
+              - columnheader "Peak queue" [ref=e431]
+              - columnheader "Retries" [ref=e432]
+          - rowgroup [ref=e433]:
+            - row [ref=e434]:
+              - cell "SYN-VLP-01" [ref=e435]
+              - cell "VLP" [ref=e436]
+              - cell "new MSID Pair" [ref=e437]
+              - cell "623" [ref=e438]
+              - cell "386" [ref=e439]
+              - cell "+61.4%" [ref=e440]
+              - cell "88" [ref=e441]
+              - cell "30" [ref=e442]
+            - row [ref=e443]:
+              - cell "SYN-AMVLP-01" [ref=e444]
+              - cell "AMVLP" [ref=e445]
+              - cell "new AMSID Pair" [ref=e446]
+              - cell "629" [ref=e447]
+              - cell "419" [ref=e448]
+              - cell "+50.1%" [ref=e449]
+              - cell "92" [ref=e450]
+              - cell "17" [ref=e451]
+            - row [ref=e452]:
+              - cell "SYN-VTP-01" [ref=e453]
+              - cell "VTP" [ref=e454]
+              - cell "new AMSID Pair" [ref=e455]
+              - cell "313" [ref=e456]
+              - cell "207" [ref=e457]
+              - cell "+51.2%" [ref=e458]
+              - cell "37" [ref=e459]
+              - cell "14" [ref=e460]
+            - row [ref=e461]:
+              - cell "SYN-VLP-02" [ref=e462]
+              - cell "VLP" [ref=e463]
+              - cell "new MSID Pair" [ref=e464]
+              - cell "346" [ref=e465]
+              - cell "241" [ref=e466]
+              - cell "+43.6%" [ref=e467]
+              - cell "53" [ref=e468]
+              - cell "16" [ref=e469]
+            - row [ref=e470]:
+              - cell "SYN-VTP-02" [ref=e471]
+              - cell "VTP" [ref=e472]
+              - cell "new AMSID Pair" [ref=e473]
+              - cell "290" [ref=e474]
+              - cell "198" [ref=e475]
+              - cell "+46.5%" [ref=e476]
+              - cell "37" [ref=e477]
+              - cell "7" [ref=e478]
+            - row [ref=e479]:
+              - cell "SYN-VTP-01" [ref=e480]
+              - cell "VTP" [ref=e481]
+              - cell "new MSID Pair" [ref=e482]
+              - cell "224" [ref=e483]
+              - cell "152" [ref=e484]
+              - cell "+47.4%" [ref=e485]
+              - cell "37" [ref=e486]
+              - cell "8" [ref=e487]
+            - row [ref=e488]:
+              - cell "SYN-SUP-01" [ref=e489]
+              - cell "Supplier" [ref=e490]
+              - cell "historic resubmission" [ref=e491]
+              - cell "232" [ref=e492]
+              - cell "162" [ref=e493]
+              - cell "+43.2%" [ref=e494]
+              - cell "59" [ref=e495]
+              - cell "9" [ref=e496]
+            - row [ref=e497]:
+              - cell "SYN-VTP-02" [ref=e498]
+              - cell "VTP" [ref=e499]
+              - cell "new MSID Pair" [ref=e500]
+              - cell "159" [ref=e501]
+              - cell "93" [ref=e502]
+              - cell "+71.0%" [ref=e503]
+              - cell "15" [ref=e504]
+              - cell "9" [ref=e505]
+            - row [ref=e506]:
+              - cell "SYN-AMVLP-01" [ref=e507]
+              - cell "AMVLP" [ref=e508]
+              - cell "historic resubmission" [ref=e509]
+              - cell "119" [ref=e510]
+              - cell "63" [ref=e511]
+              - cell "+88.9%" [ref=e512]
+              - cell "27" [ref=e513]
+              - cell "8" [ref=e514]
+            - row [ref=e515]:
+              - cell "SYN-VTP-02" [ref=e516]
+              - cell "VTP" [ref=e517]
+              - cell "historic resubmission" [ref=e518]
+              - cell "125" [ref=e519]
+              - cell "75" [ref=e520]
+              - cell "+66.7%" [ref=e521]
+              - cell "27" [ref=e522]
+              - cell "11" [ref=e523]
+            - row [ref=e524]:
+              - cell "SYN-VLP-02" [ref=e525]
+              - cell "VLP" [ref=e526]
+              - cell "new AMSID Pair" [ref=e527]
+              - cell "154" [ref=e528]
+              - cell "109" [ref=e529]
+              - cell "+41.3%" [ref=e530]
+              - cell "16" [ref=e531]
+              - cell "3" [ref=e532]
+            - row [ref=e533]:
+              - cell "SYN-SUP-01" [ref=e534]
+              - cell "Supplier" [ref=e535]
+              - cell "new MSID Pair" [ref=e536]
+              - cell "93" [ref=e537]
+              - cell "56" [ref=e538]
+              - cell "+66.1%" [ref=e539]
+              - cell "12" [ref=e540]
+              - cell "2" [ref=e541]
+            - row [ref=e542]:
+              - cell "SYN-VLP-02" [ref=e543]
+              - cell "VLP" [ref=e544]
+              - cell "historic resubmission" [ref=e545]
+              - cell "90" [ref=e546]
+              - cell "59" [ref=e547]
+              - cell "+52.5%" [ref=e548]
+              - cell "27" [ref=e549]
+              - cell "5" [ref=e550]
+            - row [ref=e551]:
+              - cell "SYN-VTP-01" [ref=e552]
+              - cell "VTP" [ref=e553]
+              - cell "historic resubmission" [ref=e554]
+              - cell "91" [ref=e555]
+              - cell "68" [ref=e556]
+              - cell "+33.8%" [ref=e557]
+              - cell "28" [ref=e558]
+              - cell "1" [ref=e559]
+            - row [ref=e560]:
+              - cell "SYN-VLP-01" [ref=e561]
+              - cell "VLP" [ref=e562]
+              - cell "historic resubmission" [ref=e563]
+              - cell "85" [ref=e564]
+              - cell "68" [ref=e565]
+              - cell "+25.0%" [ref=e566]
+              - cell "27" [ref=e567]
+              - cell "3" [ref=e568]
+            - row [ref=e569]:
+              - cell "SYN-VLP-01" [ref=e570]
+              - cell "VLP" [ref=e571]
+              - cell "new AMSID Pair" [ref=e572]
+              - cell "92" [ref=e573]
+              - cell "77" [ref=e574]
+              - cell "+19.5%" [ref=e575]
+              - cell "12" [ref=e576]
+              - cell "4" [ref=e577]
+            - row [ref=e578]:
+              - cell "SYN-AMVLP-01" [ref=e579]
+              - cell "AMVLP" [ref=e580]
+              - cell "new MSID Pair" [ref=e581]
+              - cell "66" [ref=e582]
+              - cell "53" [ref=e583]
+              - cell "+24.5%" [ref=e584]
+              - cell "12" [ref=e585]
+              - cell "2" [ref=e586]
+            - row [ref=e587]:
+              - cell "SYN-SUP-01" [ref=e588]
+              - cell "Supplier" [ref=e589]
+              - cell "new AMSID Pair" [ref=e590]
+              - cell "66" [ref=e591]
+              - cell "56" [ref=e592]
+              - cell "+17.9%" [ref=e593]
+              - cell "12" [ref=e594]
+              - cell "1" [ref=e595]
+      - generic [ref=e596]:
+        - strong [ref=e597]: "Interpretation:"
+        - text: A large forecast miss points to where to investigate first. It does not prove the forecast process caused the service incident.
+    - generic [ref=e145]:
+      - generic [ref=e146]: Settlement Service Intelligence · Candidate demonstration
+      - generic [ref=e147]: Built from public context + generated sample data

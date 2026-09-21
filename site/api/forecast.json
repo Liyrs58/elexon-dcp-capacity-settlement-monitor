@@ -1,0 +1,200 @@
+[
+  {
+    "participant_id": "SYN-AMVLP-01",
+    "participant_type": "AMVLP",
+    "submission_type": "historic resubmission",
+    "actual": 210,
+    "forecast": 144,
+    "net_work_added": 27,
+    "peak_segment_backlog": 27,
+    "variance": 0.4583333333333333,
+    "variance_pct": 45.83333333333333
+  },
+  {
+    "participant_id": "SYN-SUP-01",
+    "participant_type": "Supplier",
+    "submission_type": "new MSID Pair",
+    "actual": 156,
+    "forecast": 114,
+    "net_work_added": 12,
+    "peak_segment_backlog": 12,
+    "variance": 0.3684210526315789,
+    "variance_pct": 36.84210526315789
+  },
+  {
+    "participant_id": "SYN-VTP-02",
+    "participant_type": "VTP",
+    "submission_type": "new MSID Pair",
+    "actual": 260,
+    "forecast": 202,
+    "net_work_added": 14,
+    "peak_segment_backlog": 15,
+    "variance": 0.2871287128712871,
+    "variance_pct": 28.71287128712871
+  },
+  {
+    "participant_id": "SYN-VLP-02",
+    "participant_type": "VLP",
+    "submission_type": "historic resubmission",
+    "actual": 162,
+    "forecast": 126,
+    "net_work_added": 27,
+    "peak_segment_backlog": 27,
+    "variance": 0.2857142857142857,
+    "variance_pct": 28.57142857142857
+  },
+  {
+    "participant_id": "SYN-VLP-01",
+    "participant_type": "VLP",
+    "submission_type": "new MSID Pair",
+    "actual": 1000,
+    "forecast": 784,
+    "net_work_added": 87,
+    "peak_segment_backlog": 88,
+    "variance": 0.2755102040816326,
+    "variance_pct": 27.55102040816326
+  },
+  {
+    "participant_id": "SYN-VTP-02",
+    "participant_type": "VTP",
+    "submission_type": "historic resubmission",
+    "actual": 222,
+    "forecast": 176,
+    "net_work_added": 27,
+    "peak_segment_backlog": 27,
+    "variance": 0.26136363636363635,
+    "variance_pct": 26.136363636363637
+  },
+  {
+    "participant_id": "SYN-VTP-01",
+    "participant_type": "VTP",
+    "submission_type": "new AMSID Pair",
+    "actual": 519,
+    "forecast": 413,
+    "net_work_added": 37,
+    "peak_segment_backlog": 37,
+    "variance": 0.2566585956416465,
+    "variance_pct": 25.66585956416465
+  },
+  {
+    "participant_id": "SYN-SUP-01",
+    "participant_type": "Supplier",
+    "submission_type": "historic resubmission",
+    "actual": 388,
+    "forecast": 317,
+    "net_work_added": 57,
+    "peak_segment_backlog": 59,
+    "variance": 0.22397476340694006,
+    "variance_pct": 22.397476340694006
+  },
+  {
+    "participant_id": "SYN-AMVLP-01",
+    "participant_type": "AMVLP",
+    "submission_type": "new AMSID Pair",
+    "actual": 1024,
+    "forecast": 841,
+    "net_work_added": 88,
+    "peak_segment_backlog": 92,
+    "variance": 0.21759809750297265,
+    "variance_pct": 21.759809750297265
+  },
+  {
+    "participant_id": "SYN-VTP-02",
+    "participant_type": "VTP",
+    "submission_type": "new AMSID Pair",
+    "actual": 473,
+    "forecast": 389,
+    "net_work_added": 36,
+    "peak_segment_backlog": 37,
+    "variance": 0.2159383033419023,
+    "variance_pct": 21.59383033419023
+  },
+  {
+    "participant_id": "SYN-VLP-02",
+    "participant_type": "VLP",
+    "submission_type": "new MSID Pair",
+    "actual": 572,
+    "forecast": 471,
+    "net_work_added": 51,
+    "peak_segment_backlog": 53,
+    "variance": 0.21443736730360935,
+    "variance_pct": 21.443736730360936
+  },
+  {
+    "participant_id": "SYN-VLP-02",
+    "participant_type": "VLP",
+    "submission_type": "new AMSID Pair",
+    "actual": 241,
+    "forecast": 201,
+    "net_work_added": 14,
+    "peak_segment_backlog": 16,
+    "variance": 0.19900497512437812,
+    "variance_pct": 19.900497512437813
+  },
+  {
+    "participant_id": "SYN-VTP-01",
+    "participant_type": "VTP",
+    "submission_type": "new MSID Pair",
+    "actual": 361,
+    "forecast": 309,
+    "net_work_added": 35,
+    "peak_segment_backlog": 37,
+    "variance": 0.16828478964401294,
+    "variance_pct": 16.828478964401295
+  },
+  {
+    "participant_id": "SYN-VLP-01",
+    "participant_type": "VLP",
+    "submission_type": "historic resubmission",
+    "actual": 149,
+    "forecast": 130,
+    "net_work_added": 27,
+    "peak_segment_backlog": 27,
+    "variance": 0.14615384615384616,
+    "variance_pct": 14.615384615384617
+  },
+  {
+    "participant_id": "SYN-VLP-01",
+    "participant_type": "VLP",
+    "submission_type": "new AMSID Pair",
+    "actual": 162,
+    "forecast": 145,
+    "net_work_added": 12,
+    "peak_segment_backlog": 12,
+    "variance": 0.11724137931034483,
+    "variance_pct": 11.724137931034482
+  },
+  {
+    "participant_id": "SYN-VTP-01",
+    "participant_type": "VTP",
+    "submission_type": "historic resubmission",
+    "actual": 164,
+    "forecast": 152,
+    "net_work_added": 27,
+    "peak_segment_backlog": 28,
+    "variance": 0.07894736842105263,
+    "variance_pct": 7.894736842105263
+  },
+  {
+    "participant_id": "SYN-SUP-01",
+    "participant_type": "Supplier",
+    "submission_type": "new AMSID Pair",
+    "actual": 118,
+    "forecast": 110,
+    "net_work_added": 12,
+    "peak_segment_backlog": 12,
+    "variance": 0.07272727272727272,
+    "variance_pct": 7.2727272727272725
+  },
+  {
+    "participant_id": "SYN-AMVLP-01",
+    "participant_type": "AMVLP",
+    "submission_type": "new MSID Pair",
+    "actual": 115,
+    "forecast": 123,
+    "net_work_added": 12,
+    "peak_segment_backlog": 12,
+    "variance": -0.06504065040650407,
+    "variance_pct": -6.504065040650407
+  }
+]

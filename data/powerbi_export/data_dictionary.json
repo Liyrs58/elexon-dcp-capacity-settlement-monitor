@@ -1,0 +1,23 @@
+{
+  "timestamp": "Synthetic hourly interval in ISO format",
+  "participant_id": "Synthetic participant identifier beginning SYN",
+  "participant_type": "Synthetic VLP, VTP, AMVLP or Supplier category",
+  "submission_type": "Synthetic registration workload category",
+  "submissions_received": "Generated arrivals in the interval",
+  "submissions_processed": "Generated completed records in the interval",
+  "backlog_size": "Generated open queue after processing",
+  "processing_latency_minutes": "Generated service latency indicator",
+  "validation_failure_count": "Generated validation failures",
+  "retry_count": "Generated retries",
+  "forecast_submissions": "Generated submitted forecast",
+  "actual_submissions": "Generated actual arrivals",
+  "service_level_deadline_minutes": "Synthetic deadline for the demonstration",
+  "downstream_settlement_risk_flag": "Generated risk flag",
+  "demo_capacity_per_hour": "Synthetic processing budget",
+  "priority_class": "Synthetic priority label for scenario analysis",
+  "settlement_critical_indicator": "Synthetic indicator for critical registration work",
+  "payment_critical_indicator": "Synthetic indicator for payment related work",
+  "net_queue_growth": "Closing backlog minus opening backlog",
+  "forecast_error_pct": "Generated actual minus forecast as a percentage",
+  "risk_state": "Generated row level state using demonstration thresholds"
+}

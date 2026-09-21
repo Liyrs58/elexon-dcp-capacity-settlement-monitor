@@ -1,0 +1,76 @@
+- generic [ref=f1e2]:
+  - complementary [ref=f1e3]:
+    - generic [ref=f1e4]: SI
+    - generic [ref=f1e5]:
+      - generic [ref=f1e6]: Service monitor
+      - generic [ref=f1e7]: SYNTHETIC CASE
+    - navigation "Dashboard sections" [ref=f1e9]:
+      - button "Overview" [ref=f1e10] [cursor=pointer]
+      - button "Drivers & forecast" [ref=f1e11] [cursor=pointer]
+      - button "Scenario lab" [ref=f1e12] [cursor=pointer]
+      - button "Hypothesis tests" [ref=f1e13] [cursor=pointer]
+      - button "Customer impact" [ref=f1e14] [cursor=pointer]
+      - button "Improvement register" [active] [ref=f1e15] [cursor=pointer]
+      - button "Analyst approach" [ref=f1e16] [cursor=pointer]
+      - button "Service note" [ref=f1e17] [cursor=pointer]
+      - button "Evidence & limits" [ref=f1e18] [cursor=pointer]
+    - generic [ref=f1e22]:
+      - strong [ref=f1e23]: Public case
+      - generic [ref=f1e24]: 14 Sep 2026 circular
+    - generic [ref=f1e25]: LOCAL DEMONO LIVE SYSTEM CONNECTION
+  - main [ref=f1e26]:
+    - generic [ref=f1e27]:
+      - generic [ref=f1e28]: SERVICE MONITOR / SETTLEMENT & INSIGHT
+      - generic [ref=f1e29]:
+        - generic [ref=f1e30]: SYNTHETIC DATA
+        - generic [ref=f1e32]: RS
+    - generic [ref=f1e33]:
+      - strong [ref=f1e34]: DEMONSTRATION ONLY
+      - generic [ref=f1e35]: Every participant, metric, threshold and service run shown here is generated. No Elexon operational data is used.
+    - generic [ref=f1e764]:
+      - generic [ref=f1e766]:
+        - generic [ref=f1e767]: IMPROVEMENT REGISTER
+        - heading "What should be tested with the service owner?" [level=1] [ref=f1e768]
+        - paragraph [ref=f1e769]: Each idea has an owner, measure and risk before it is treated as a decision.
+      - article [ref=f1e770]:
+        - table [ref=f1e772]:
+          - rowgroup [ref=f1e773]:
+            - row [ref=f1e774]:
+              - columnheader "Problem" [ref=f1e775]
+              - columnheader "Proposed action" [ref=f1e776]
+              - columnheader "Benefit" [ref=f1e777]
+              - columnheader "Risk" [ref=f1e778]
+              - columnheader "Measure" [ref=f1e779]
+              - columnheader "Status" [ref=f1e780]
+          - rowgroup [ref=f1e781]:
+            - row [ref=f1e782]:
+              - cell "Forecasts can become stale as flexible asset demand changes." [ref=f1e783]
+              - cell "Use rolling participant forecasts with base, expected and high cases." [ref=f1e784]
+              - cell "Earlier warning of demand pressure." [ref=f1e785]
+              - cell "Forecast administration and inconsistent submissions." [ref=f1e786]
+              - cell "Forecast error and warning lead time." [ref=f1e787]
+              - cell "Candidate" [ref=f1e788]
+            - row [ref=f1e789]:
+              - cell "A rising queue may be noticed after a critical run is already late." [ref=f1e790]
+              - cell "Monitor arrivals, completions, queue age and latency together." [ref=f1e791]
+              - cell "Faster controlled escalation." [ref=f1e792]
+              - cell "False alerts without agreed definitions." [ref=f1e793]
+              - cell "Alert precision and time to acknowledgement." [ref=f1e794]
+              - cell "Candidate" [ref=f1e795]
+            - row [ref=f1e796]:
+              - cell "Non critical historic resubmissions may compete with urgent work during a constrained period." [ref=f1e797]
+              - cell "Assess controlled scheduling or throttling with customer and rule checks." [ref=f1e798]
+              - cell "More capacity for critical workloads if feasible." [ref=f1e799]
+              - cell "Customer obligations and queue ageing." [ref=f1e800]
+              - cell "Critical completion and recovery time." [ref=f1e801]
+              - cell "Hypothesis" [ref=f1e802]
+            - row [ref=f1e803]:
+              - cell "Incident knowledge can be lost between shifts." [ref=f1e804]
+              - cell "Use a structured incident note and review log." [ref=f1e805]
+              - cell "Clearer handover and repeatable learning." [ref=f1e806]
+              - cell "Documentation becomes stale." [ref=f1e807]
+              - cell "Completeness of handover fields." [ref=f1e808]
+              - cell "Candidate" [ref=f1e809]
+    - generic [ref=f1e139]:
+      - generic [ref=f1e140]: Settlement Service Intelligence · Candidate demonstration
+      - generic [ref=f1e141]: Built from public context + generated sample data

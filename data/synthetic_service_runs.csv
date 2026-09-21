@@ -1,0 +1,29 @@
+timestamp,service_run_type,scheduled_at,delay_minutes,deadline_minutes,status,downstream_settlement_risk_flag,demo_queue_at_schedule
+2026-01-01T07:00,Settlement-critical,2026-01-01T07:00,0,60,On time,0,0
+2026-01-01T13:00,payment-critical,2026-01-01T13:00,0,45,On time,0,6
+2026-01-02T07:00,Settlement-critical,2026-01-02T07:00,0,60,On time,0,0
+2026-01-02T13:00,payment-critical,2026-01-02T13:00,0,45,On time,0,14
+2026-01-03T07:00,Settlement-critical,2026-01-03T07:00,0,60,On time,0,0
+2026-01-03T13:00,payment-critical,2026-01-03T13:00,0,45,On time,0,4
+2026-01-04T07:00,Settlement-critical,2026-01-04T07:00,0,60,On time,0,0
+2026-01-04T13:00,payment-critical,2026-01-04T13:00,0,45,On time,0,4
+2026-01-05T07:00,Settlement-critical,2026-01-05T07:00,0,60,On time,0,0
+2026-01-05T13:00,payment-critical,2026-01-05T13:00,0,45,On time,0,18
+2026-01-06T07:00,Settlement-critical,2026-01-06T07:00,0,60,On time,0,0
+2026-01-06T13:00,payment-critical,2026-01-06T13:00,0,45,On time,0,13
+2026-01-07T07:00,Settlement-critical,2026-01-07T07:00,0,60,On time,0,1
+2026-01-07T13:00,payment-critical,2026-01-07T13:00,0,45,On time,0,13
+2026-01-08T07:00,Settlement-critical,2026-01-08T07:00,0,60,On time,0,0
+2026-01-08T13:00,payment-critical,2026-01-08T13:00,0,45,On time,0,4
+2026-01-09T07:00,Settlement-critical,2026-01-09T07:00,0,60,On time,0,0
+2026-01-09T13:00,payment-critical,2026-01-09T13:00,0,45,On time,0,44
+2026-01-10T07:00,Settlement-critical,2026-01-10T07:00,0,60,On time,0,16
+2026-01-10T13:00,payment-critical,2026-01-10T13:00,0,45,On time,0,64
+2026-01-11T07:00,Settlement-critical,2026-01-11T07:00,0,60,On time,0,35
+2026-01-11T13:00,payment-critical,2026-01-11T13:00,0,45,On time,0,89
+2026-01-12T07:00,Settlement-critical,2026-01-12T07:00,0,60,On time,0,94
+2026-01-12T13:00,payment-critical,2026-01-12T13:00,17,45,On time,0,206
+2026-01-13T07:00,Settlement-critical,2026-01-13T07:00,22,60,On time,0,250
+2026-01-13T13:00,payment-critical,2026-01-13T13:00,46,45,Delayed,1,348
+2026-01-14T07:00,Settlement-critical,2026-01-14T07:00,57,60,On time,0,417
+2026-01-14T13:00,payment-critical,2026-01-14T13:00,70,45,Delayed,1,524

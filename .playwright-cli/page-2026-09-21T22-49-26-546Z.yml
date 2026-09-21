@@ -1,0 +1,114 @@
+- generic [ref=f1e2]:
+  - complementary [ref=f1e3]:
+    - generic [ref=f1e4]: SI
+    - generic [ref=f1e5]:
+      - generic [ref=f1e6]: Service monitor
+      - generic [ref=f1e7]: SYNTHETIC CASE
+    - navigation "Dashboard sections" [ref=f1e9]:
+      - button "Overview" [ref=f1e10] [cursor=pointer]
+      - button "Drivers & forecast" [ref=f1e11] [cursor=pointer]
+      - button "Scenario lab" [active] [ref=f1e12] [cursor=pointer]
+      - button "Hypothesis tests" [ref=f1e13] [cursor=pointer]
+      - button "Customer impact" [ref=f1e14] [cursor=pointer]
+      - button "Improvement register" [ref=f1e15] [cursor=pointer]
+      - button "Analyst approach" [ref=f1e16] [cursor=pointer]
+      - button "Service note" [ref=f1e17] [cursor=pointer]
+      - button "Evidence & limits" [ref=f1e18] [cursor=pointer]
+    - generic [ref=f1e22]:
+      - strong [ref=f1e23]: Public case
+      - generic [ref=f1e24]: 14 Sep 2026 circular
+    - generic [ref=f1e25]: LOCAL DEMONO LIVE SYSTEM CONNECTION
+  - main [ref=f1e26]:
+    - generic [ref=f1e27]:
+      - generic [ref=f1e28]: SERVICE MONITOR / SETTLEMENT & INSIGHT
+      - generic [ref=f1e29]:
+        - generic [ref=f1e30]: SYNTHETIC DATA
+        - generic [ref=f1e32]: RS
+    - generic [ref=f1e33]:
+      - strong [ref=f1e34]: DEMONSTRATION ONLY
+      - generic [ref=f1e35]: Every participant, metric, threshold and service run shown here is generated. No Elexon operational data is used.
+    - generic [ref=f1e506]:
+      - generic [ref=f1e507]:
+        - generic [ref=f1e508]:
+          - generic [ref=f1e509]: SCENARIO ANALYSIS
+          - heading "What happens if demand changes?" [level=1] [ref=f1e510]
+          - paragraph [ref=f1e511]: Change the assumptions and inspect a simple queue balance. This is a conditional calculation.
+        - generic [ref=f1e512]: queue = queue + arrivals − capacity
+      - generic [ref=f1e513]:
+        - article [ref=f1e514]:
+          - generic [ref=f1e516]:
+            - heading "Set the assumptions" [level=3] [ref=f1e517]
+            - paragraph [ref=f1e518]: Starting rates use the last 72 synthetic hours.
+          - generic [ref=f1e519]:
+            - generic [ref=f1e520]: New pair demand increase
+            - strong [ref=f1e521]: +20%
+          - slider "New pair demand increase +20%" [ref=f1e522]: "120"
+          - generic [ref=f1e523]:
+            - generic [ref=f1e524]: Base
+            - generic [ref=f1e525]: +50%
+            - generic [ref=f1e526]: +100%
+          - generic [ref=f1e527]:
+            - generic [ref=f1e528]: Historic resubmissions throttled
+            - strong [ref=f1e529]: 0%
+          - slider "Historic resubmissions throttled 0%" [ref=f1e530]: "0"
+          - generic [ref=f1e531]:
+            - generic [ref=f1e532]: None
+            - generic [ref=f1e533]: 50%
+            - generic [ref=f1e534]: 100%
+          - generic [ref=f1e535]:
+            - generic [ref=f1e536]: Capacity reserved outside registration queue
+            - strong [ref=f1e537]: 0%
+          - slider "Capacity reserved outside registration queue 0%" [ref=f1e538]: "0"
+          - generic [ref=f1e539]:
+            - generic [ref=f1e540]: 0%
+            - generic [ref=f1e541]: 15%
+            - generic [ref=f1e542]: 30%
+          - generic [ref=f1e543]: Projection horizon
+          - combobox "Projection horizon" [ref=f1e545]:
+            - option "24 hours" [selected]
+            - option "48 hours"
+            - option "72 hours"
+          - generic [ref=f1e546]:
+            - strong [ref=f1e547]: Assumptions
+            - paragraph [ref=f1e548]: Steady hourly arrivals and processing capacity; no recovery surge, seasonality, dependency delays, or unknown constraints. Reserving capacity reduces the demo registration budget; downstream run behaviour is not forecast.
+        - generic [ref=f1e549]:
+          - generic [ref=f1e550]:
+            - article [ref=f1e551]:
+              - generic [ref=f1e552]: STARTING BACKLOG
+              - generic [ref=f1e553]: "602"
+              - generic [ref=f1e554]: Synthetic current queue
+            - article [ref=f1e555]:
+              - generic [ref=f1e556]: PROJECTED BACKLOG
+              - generic [ref=f1e557]: "875"
+              - generic [ref=f1e558]: +273 over 24h
+            - article [ref=f1e559]:
+              - generic [ref=f1e560]: NET QUEUE GROWTH
+              - generic [ref=f1e561]: "+11.4"
+              - generic [ref=f1e562]: Per hour under current assumptions
+            - article [ref=f1e563]:
+              - generic [ref=f1e564]: TIME TO DEMO ALERT
+              - generic [ref=f1e565]: 26.2h
+              - generic [ref=f1e566]: Only if queue is below 900 and growing
+          - article [ref=f1e567]:
+            - generic [ref=f1e568]:
+              - generic [ref=f1e569]:
+                - heading "Queue projection" [level=3] [ref=f1e570]
+                - paragraph [ref=f1e571]: Current queue compared with scenario horizon
+              - generic [ref=f1e572]: STEADY-RATE MODEL
+            - generic [ref=f1e574]:
+              - generic [ref=f1e575]:
+                - generic [ref=f1e576]: Current queue
+                - strong [ref=f1e577]: "602"
+              - generic [ref=f1e580]:
+                - generic [ref=f1e581]: Projected after 24 hours
+                - strong [ref=f1e582]: "875"
+              - generic [ref=f1e585]:
+                - generic [ref=f1e586]: Demo alert reference
+                - strong [ref=f1e587]: "900"
+              - paragraph [ref=f1e588]: "Projected arrivals: 31.4/hour · registration capacity after reserve: 20.0/hour"
+          - article [ref=f1e589]:
+            - generic [ref=f1e590]: WHAT THIS CAN SUPPORT
+            - paragraph [ref=f1e591]: Compare trade-offs and identify the assumptions that matter. Any real throttling, priority, or capacity decision would require confirmed service rules, customer impacts, operational ownership, and measured telemetry.
+    - generic [ref=f1e139]:
+      - generic [ref=f1e140]: Settlement Service Intelligence · Candidate demonstration
+      - generic [ref=f1e141]: Built from public context + generated sample data
